@@ -39,18 +39,18 @@ body {
 
 .banner .banner-content h2{
     font-size: 4em;
-    color: #FFF;
+    color: #fff;
 }
-
 .banner p {
     font-size: 1em;
     color: #fff;
+    font-weight: 600;
 }
 
 .btn-Banner {
     font-size: 1em;
     color: #FFF;
-    background: #ff0157;
+    background: #ffbd17;
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
@@ -59,6 +59,7 @@ body {
     border-radius: 6px;
     letter-spacing: 2px;
     transition: 0.5s;
+    font-weight: bolder;
 }
 
 .btn-Banner:hover {
@@ -66,19 +67,7 @@ body {
 
 }
 
-.banner .wave {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    background: url( ../image/wave.png);
-    z-index: -5;
-    animation: animate 10s linear infinite;
-}
-@keyframes animate {
-    0% {background-position: 0;}
-    100% {background-position: 1000px;}
-}
+
 
 /* thanh header  */
 header {
@@ -123,6 +112,7 @@ header .nav li a{
     text-decoration: none;
     color: #fff;
     font-weight: 900;
+    
 }
 
 
@@ -131,8 +121,7 @@ header.sticky .nav li a{
 }
 
 header .nav li a:hover{
-    color: #ff0157;
-    background: #fff;
+    color: #ffbd17;
 
 }
 
@@ -142,27 +131,30 @@ header .nav li a:hover{
     width: 100%;
     height: 100vh;  
     background: url(/image/about.png);
+
 }
 
 .row {
     position: relative;
     width: 100%;
     display: flex;
-
 }
 
+.row .about-song img {
+    position: absolute;
+    top: 10px;
+    left: 40%;
+}
 .row .col {
     position: relative;
     width: 39%;
-    
-
 }
 
 .about-title {
-    color: #111;
+    color: #fff;
     font-size: 2em;
-    font-weight: 300;
-    background: #fff;
+    font-weight: 600;
+    background: #ffbd17;
     width: 200px;
     text-align: center;
     margin: 91px 0 20px 0;
@@ -170,7 +162,7 @@ header .nav li a:hover{
 }
 
 .about-title span{
-    color: #ff0157;
+    color: #fff;
     font-weight: 700;
     font-size: 1.5em;
 }
@@ -196,10 +188,12 @@ header .nav li a:hover{
 
 /* REVIEW */
 .review {
-    background: #FFE194;
-    width: 100%;
-    height: 225vh;
-    
+    background: url(/image/Thiết\ kế\ không\ tên\ \(4\).png);
+    object-fit: cover;
+    background-size: cover ;
+    background-position: center;
+    background-attachment:fixed ;
+    padding-bottom: 30px;
 }
 
 .review-title {
@@ -211,7 +205,7 @@ header .nav li a:hover{
 }
 
 .review-title .title {
-    background: #90D9EB;
+    background: #ffbd17;
     font-size: 2em;
     font-weight: 700;
     width: 200px;
@@ -239,7 +233,7 @@ header .nav li a:hover{
 }
 
 .search .icon {
-    background: #90D9EB;
+    background: #ffbd17;
     margin-left: 10px;
     width: 40px;
     height: 29px;
@@ -268,6 +262,7 @@ header .nav li a:hover{
 
 .review .review-content .content-box {
     width: 340px;
+    height: 400px;
     margin: 20px;
     border: 10px solid #fff;
     box-shadow: 0 5px 35px rgba(0,0,0,0.08) ;
@@ -278,17 +273,14 @@ header .nav li a:hover{
 .review .review-content .content-box .box-img {
     position: relative;
     width: 100%;
-    height: 370px;
-    
+    height: 270px;
 }
 
 .review .review-content .content-box .box-img img{
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border-radius: 5px;
-
 }
 
 .review .review-content .content-box .box-text {
@@ -409,4 +401,202 @@ video:focus{
     right: 10px;
     width: 30px;
     cursor: pointer;
+}
+
+
+
+/* profiles */
+
+.founders {
+    min-height: 100vh;
+    background: url(../image/profile/bia-profile.png);
+    background-size: cover ;
+    background-position: center;
+    background-attachment:fixed ;
+}
+
+.founders .heading span{
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    font-size: 30px;
+}
+
+.founders .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:2em 0;
+}
+
+.founders .box-container .box {
+    height: 30rem;
+    width: 20rem;
+    margin: 20px;
+    border: 5px solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+    position: relative;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.founders .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.founders .box-container .box .info{
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-top: 5px solid #fff;
+    text-align: center;
+}
+
+.founders .box-container .box:hover .info{
+    bottom: 0;
+}
+.founders .box-container .box .info h3{
+    font-size: 1.5em;
+    color: #333;
+
+}
+
+.founders .box-container .box .info span{
+    font-size: 1em;
+    font-weight: 600;
+    color: #666;
+
+}
+.founders .box-container .box .info .share {
+    margin-top: 10px;
+    border-top: 1px solid rgba(0,0,0,.3);
+
+}
+
+.founders .box-container .box .info .share a{
+    font-size: 20px;
+    margin: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.founders .box-container .box .info .share a:hover{
+    color: #7AD3E5;
+}
+
+
+/* CONTACT */
+.contact {
+    background: #ffbd17;
+}
+
+.content {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 50px 100px 20px 100px;
+}
+
+
+/* fromBx */
+
+.fromBx {
+    min-width: 60%;
+}
+
+.fromBx form{
+    display: flex;
+    flex-direction: column;
+}
+
+.fromBx form h3,
+.contactInfo h3
+{
+    color: #222;
+    font-size: 20px;
+    font-weight:bolder;
+
+}
+
+.fromBx form input,
+.fromBx form textarea
+{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+    resize: none;
+}
+
+.fromBx form textarea {
+    min-height: 200px;
+}
+
+.fromBx form input::placeholder,
+.fromBx form textarea::placeholder {
+    color: rgba(153, 153, 153, 0.555);
+    font-weight: 700;
+}
+
+.fromBx form input[type="submit"] {
+    max-width: 120px;
+
+    background: #222;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    border-radius: 10px;
+
+}
+
+.contactInfo {
+    min-width: 40%;
+}
+
+.contactInfoBx {
+    position: relative;
+}
+
+.contactInfoBx .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contactInfoBx .box .icon {
+    min-height: 40px;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+}
+
+.contactInfoBx .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight:bold;
+}
+
+.contactInfoBx .box .text h3{
+    /* font-weight: 500; */
+    color: #666;
+    margin-bottom: 0;
 }
