@@ -200,9 +200,8 @@ header .nav li a:hover{
     justify-content: space-between;
     padding: 91px 50px 30px 0;
     color: #FFF;
-    
 }
-
+ 
 .review-title .title {
     background: #ffbd17;
     font-size: 2em;
@@ -266,7 +265,8 @@ header .nav li a:hover{
     border: 10px solid #fff;
     box-shadow: 0 5px 35px rgba(0,0,0,0.08) ;
     border-radius: 5px;
-   
+    transition: 0.5s ease;
+    cursor: pointer;
 }
 
 .review .review-content .content-box .box-img {
@@ -301,6 +301,10 @@ header .nav li a:hover{
     padding-left: 20px;
 }
 
+.review .review-content .content-box:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
 
 /* VIDEO */
 
@@ -331,6 +335,18 @@ header .nav li a:hover{
 .video .video-content .video-row .col {
     flex-basis: 50%;
     min-width: 250px;
+}
+
+.video .video-content .video-row .col .feature-img{transition: 0.5s ease;}
+.video .video-content .video-row .col .feature-img:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+.video .video-content .video-row .col .small-img-row{transition: 0.5s ease;}
+.video .video-content .video-row .col .small-img-row:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
 
 .feature-img {
@@ -533,9 +549,9 @@ video:focus{
 .fromBx form h3,
 .contactInfo h3
 {
-    color: #222;
-    font-size: 20px;
-    font-weight:bolder;
+    color: #555;
+    font-size: 30px;
+    font-weight:bold ;
 
 }
 
@@ -592,7 +608,7 @@ video:focus{
 
 .contactInfoBx .box .icon {
     min-height: 40px;
-    padding-top: 4px;
+    padding-top: 10px;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -611,6 +627,5 @@ video:focus{
 
 .contactInfoBx .box .text h3{
     /* font-weight: 500; */
-    color: #666;
-    margin-bottom: 0;
+    color: #111;
 }

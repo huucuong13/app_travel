@@ -15,3 +15,11 @@ function playVideo (file) {
     videoPlayer.style.display = "block";
 
 }
+
+// scroll banner
+
+let video = document.querySelector('section');
+window.addEventListener('scroll', function () {
+    let value = 1 + window.scrollY/ -600;
+    video.style.opacity = value
+})
