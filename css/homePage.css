@@ -131,7 +131,7 @@ header .nav li a:hover{
     width: 100%;
     height: 100vh;  
     background: url(../image/about.png);
-    object-fit: cover;
+ 
 }
 
 .row {
@@ -386,7 +386,7 @@ header .nav li a:hover{
     width: 38%;
     position:absolute;
     left: 30%;
-    top: 60%;
+    top: 54%;
     transform: translate(-50%,-50%);
     display: none;
 }
