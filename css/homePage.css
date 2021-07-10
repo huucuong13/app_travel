@@ -306,7 +306,8 @@ header .nav li a:hover{
 
 .video {
     position: relative;
-    background: #7AD3E5;
+    background: url(../image/img_video4.png);
+ 
     z-index: 2;
 }
 .video .video-content {
@@ -382,13 +383,26 @@ header .nav li a:hover{
 }
 
 .video-player {
-    width: 38%;
+    width: 100%;
+    height: 100vh;
     position:absolute;
-    left: 30%;
-    top: 54%;
+    left: 50%;
+    top: 50%;
     transform: translate(-50%,-50%);
     display: none;
+    background: url(../image/img_video.png);
+    object-fit:fill;
+ 
 }
+
+.video .video-content .video-player video{
+    position: relative;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+
 video:focus{
     outline: none;
 
@@ -396,9 +410,9 @@ video:focus{
 
 .close-btn {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 30px;
+    top: 12%;
+    right: 2%;
+    width: 40px;
     cursor: pointer;
 }
 
@@ -537,6 +551,7 @@ video:focus{
     background: #222;
     color: #fff;
     resize: none;
+    border-radius: 10px;
 }
 
 .fromBx form textarea {
