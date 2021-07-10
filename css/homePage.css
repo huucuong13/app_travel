@@ -130,8 +130,8 @@ header .nav li a:hover{
 .about {
     width: 100%;
     height: 100vh;  
-    background: url(/image/about.png);
-
+    background: url(../image/about.png);
+    object-fit: cover;
 }
 
 .row {
@@ -188,7 +188,7 @@ header .nav li a:hover{
 
 /* REVIEW */
 .review {
-    background: url(/image/Thiết\ kế\ không\ tên\ \(4\).png);
+    background: url(../image/bia_review.png);
     object-fit: cover;
     background-size: cover ;
     background-position: center;
