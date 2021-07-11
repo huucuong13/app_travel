@@ -115,6 +115,9 @@ header .nav li a{
     
 }
 
+header .nav li a .far {
+    font-size: 25px;
+}
 
 header.sticky .nav li a{
     color: #111;
@@ -631,6 +634,8 @@ video:focus{
 }
 
 
+
+
 /* Start MODAL */
 .modal {
     position: fixed;
@@ -638,10 +643,11 @@ video:focus{
     right: 0;
     bottom: 0;
     left: 0;
-
     z-index: 2000;
     display: none;
 }
+
+
 
 .modal__overLay {
     position: absolute;
@@ -664,3 +670,5 @@ video:focus{
 }
 
 /* End MODAL */
+
+
