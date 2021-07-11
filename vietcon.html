@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap" rel="stylesheet">
     <script src="../js/pr.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link href="stylesheet" href="./css/cssvietcon/reset.css" />
     <link rel="stylesheet" href="./css/cssvietcon/pr.css" />
 </head>
@@ -117,7 +118,7 @@
                     <p>Địa hình: Núi</p>
                     <p>Mùa du lịch: Xuân</p>
                     <p>Tháng: Tháng 6- Tháng 9</p>
-                    <a href="" class="btn">Gọi miễn phí ngay &#9742</a>
+                    <a href="" class="btn--1">Gọi miễn phí ngay &#9742</a>
                     <a href="" class="btn--2">Gửi yêu cầu hỗ trợ ngay &#10000</a>
                     
             </div>  
@@ -165,8 +166,48 @@
                 </div>					
             </div> <!-- End Col -->								
         </div>
-        
-
+        <div class="container2">
+            <div class="post">
+              <div class="text">Thanks for rating us!</div>
+              <div class="edit">EDIT</div>
+            </div>
+            <div class="star-widget">
+              <input type="radio" name="rate" id="rate-5">
+              <label for="rate-5" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-4">
+              <label for="rate-4" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-3">
+              <label for="rate-3" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-2">
+              <label for="rate-2" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-1">
+              <label for="rate-1" class="fas fa-star"></label>
+              <form action="#">
+                <header></header>
+                <div class="textarea">
+                  <textarea cols="30" placeholder="Describe your experience.."></textarea>
+                </div>
+                <div class="btn">
+                  <button type="submit">Post</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <script>
+            const btn = document.querySelector("button");
+            const post = document.querySelector(".post");
+            const widget = document.querySelector(".star-widget");
+            const editBtn = document.querySelector(".edit");
+            btn.onclick = ()=>{
+              widget.style.display = "none";
+              post.style.display = "block";
+              editBtn.onclick = ()=>{
+                widget.style.display = "block";
+                post.style.display = "none";
+              }
+              return false;
+            }
+          </script>
 </body>
 
 
