@@ -115,6 +115,9 @@ header .nav li a{
     
 }
 
+header .nav li a .far {
+    font-size: 25px;
+}
 
 header.sticky .nav li a{
     color: #111;
@@ -128,7 +131,7 @@ header .nav li a:hover{
 
 /* About */
 .about {
-    background: url(../image/about2.png);
+    background: url(../image/img-cuong/about2.png);
     width: 100%;
     height: 100vh;
 }
@@ -187,7 +190,7 @@ header .nav li a:hover{
 
 /* REVIEW */
 .review {
-    background: url(../image/bia_review.png);
+    background: url(../image/img-cuong/bia_review.png);
     object-fit: cover;
     background-size: cover ;
     background-position: center;
@@ -310,7 +313,7 @@ header .nav li a:hover{
 
 .video {
     position: relative;
-    background: url(../image/img_video4.png);
+    background: url(../image/img-cuong/img_video4.png);
  
     z-index: 2;
 }
@@ -406,7 +409,7 @@ header .nav li a:hover{
     top: 50%;
     transform: translate(-50%,-50%);
     display: none;
-    background: url(../image/img_video.png);
+    background: url(../image/img-cuong/img_video.png);
     object-fit:fill;
  
 }
@@ -438,7 +441,7 @@ video:focus{
 
 .founders {
     min-height: 100vh;
-    background: url(../image/profile/bia-profile.png);
+    background: url(../image/img-cuong/profile/bia-profile.png);
     background-size: cover ;
     background-position: center;
     background-attachment:fixed ;
@@ -629,3 +632,43 @@ video:focus{
     /* font-weight: 500; */
     color: #111;
 }
+
+
+
+
+/* Start MODAL */
+.modal {
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2000;
+    display: none;
+}
+
+
+
+.modal__overLay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0,0,0.4);
+}
+
+.modal__body{
+    width: 300px;
+    height: 300px;
+    background: #fff;  
+    position: relative;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* End MODAL */
+
+

@@ -23,3 +23,23 @@ window.addEventListener('scroll', function () {
     let value = 1 + window.scrollY/ -600;
     video.style.opacity = value
 })
+
+// Start_user
+
+var modal = document.getElementById("modal");
+var myModal = document.getElementById("myModal");
+function stopUser () {
+    modal.style.display ="none"
+}
+function startUser () {
+    modal.style.display ="block";
+}
+
+// layout
+
+var startLayout = document.querySelectorAll(".content-box");
+for (let i = 0; i < startLayout.length; i++) {
+    startLayout[i].addEventListener("click", function() {
+        window.location.href ="http://127.0.0.1:5500/vietcon.html"
+    })
+}
