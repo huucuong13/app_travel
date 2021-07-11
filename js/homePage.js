@@ -37,4 +37,9 @@ function startUser () {
 
 // layout
 
-
+var startLayout = document.querySelectorAll(".content-box");
+for (let i = 0; i < startLayout.length; i++) {
+    startLayout[i].addEventListener("click", function() {
+        window.location.href ="http://127.0.0.1:5500/vietcon.html"
+    })
+}
