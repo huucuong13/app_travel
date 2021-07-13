@@ -43,3 +43,4 @@ for (let i = 0; i < startLayout.length; i++) {
         window.location.href ="http://127.0.0.1:5500/vietcon.html"
     })
 }
+
