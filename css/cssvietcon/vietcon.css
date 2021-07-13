@@ -10,7 +10,46 @@ p{
     color: black;
     font-weight: bold;
 }
-
+.container{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+.nut--like {
+  padding: 5px 5px;
+  background: #3543c0;
+  font-size: 13px;
+  border-radius: 5px;
+  color: #e8efff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.nut--pinterest {
+  padding: 5px 5px;
+  background: #bb2323;
+  font-size: 13px;
+  border-radius: 5px;
+  color: #e8efff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.nut--twitter {
+  padding: 5px 5px;
+  background: #8692ff;
+  font-size: 13px;
+  border-radius: 5px;
+  color: #e8efff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
 .row{
     display: flex;
     justify-content: center;
@@ -18,10 +57,7 @@ p{
 }
 .col-1{
     flex-basis: 40%;
-    min-width: 300px;
     overflow-x: hidden;
-    margin-left: auto;
-    padding: 20px;
 }
 .col-1 h2{
     color: red;
@@ -142,7 +178,7 @@ p{
 }
 .btn--2 {
     display: inline-block;
-    background: rgb(66, 53, 189);
+    background: rgb(78, 77, 156);
     color: #fff;
     padding: 8px 30px;
     margin: 30px 0;
@@ -154,6 +190,13 @@ p{
 }
 .btn--2:hover{
     background: #a73838;
+}
+
+.anh--comment{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
 }
 .testimonial-box img {
     display: inline-block;
@@ -176,12 +219,11 @@ p{
     color: #fec42d;
     margin-bottom: 15px;
 }
-html,body{
+.binhluan{
   display: grid;
   height: 100%;
   place-items: center;
   text-align: center;
-  background: rgb(255, 255, 255);
 }
 .container2{
   position: relative;
