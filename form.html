@@ -44,6 +44,9 @@
                 <input  id="password_confirmation" name="password_confirmation" type="password" placeholder="Nhập lại mật khẩu">
                 <span class="form-message"></span>
             </div>
+
+            
+
             <button class="form-submit">Submit</button>
         </form>
     </div>
@@ -52,6 +55,7 @@
 
         validator({
             form: '#form-1',
+            formGroupSelector: '.form-group',
             errorSelector: '.form-message',
             rules: [
                 validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ'),
