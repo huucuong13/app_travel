@@ -19,14 +19,33 @@
 
     <header>
         <a href="#banner" class="logo"><img src="./image/img-cuong/review (1).png" alt="logo" class="logo"></a>
+        <div class="header_search">
+
+            <input type="text" class="header_search-input" placeholder="Search review">
+            <button class="header_search-btn">
+                <i class="header_search-btn-icon fas fa-search"></i>
+            </button>
+            
+        </div>
         <ul class="nav">
             <li><a href="#banner">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#review">Review</a></li>
             <li><a href="#video">Video</a></li>
-            <li><a href="#founders">founders</a></li>
+            <li><a href="#founders">Founders</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#modal" id="myModal" onclick="startUser('')"><i class="far fa-user-circle"></i></a></li>
+            <li class="user">
+                <a href="#contact"><i class="far fa-user-circle"></i> Log in</a>
+                <ul class="user-option">
+                    <li class="user-option-item">
+                        <a href="">Sign In</a>
+                    </li>
+                    <li class="user-option-item">
+                        <a href="/form.html">Sign Up</a>
+                    </li>
+                </ul>
+            </li>
+
         </ul>
     </header>
     <section class="banner" id="banner">
