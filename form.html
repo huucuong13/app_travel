@@ -68,7 +68,32 @@
                 }, 'Mật khẩu nhập lại không chính xác'),
             ],
             onSubmit: function (data) {
-                // call AIP
+                const dataUse = JSON.parse(localStorage.getItem("dataUse"))//lấy dữ liệu về 
+                if(!dataUse){// thêm acc vào hệ thống khi chưa có dữ liệu
+                    const dataUse2= [{
+                        "id":"",
+                        "email":"",
+                        "password":"",
+                        "fullName":""
+                    }]
+                    dataUse2[0].id = dataUse2.length
+                    dataUse2[0].email = document.getElementById("email").value
+                    dataUse2[0].password = document.getElementById("password").value
+                    dataUse2[0].fullName = document.getElementById("fullname").value
+                    localStorage.setItem("dataUse",JSON.stringify(dataUse2))
+                    console.log(JSON.parse(localStorage.getItem("dataUse")))}
+                    console.log(data)
+                if(dataUse){ //thêm acc vào hệ thống khi có dữ liệu
+                    const x = Object.assign({},dataUse[0])// thêm 1 objec mới
+                    dataUse.push(x)//thêm giá trị mới của array là objec
+                    dataUse[(dataUse.length-1)].id = dataUse.length //thêm id
+                    dataUse[(dataUse.length-1)].email =  document.getElementById("email").value// thêm email
+                    dataUse[(dataUse.length-1)].password = document.getElementById("password").value//thêm pass
+                    dataUse[(dataUse.length-1)].fullname = document.getElementById("fullname").value
+                    console.log(dataUse)
+                    localStorage.setItem("dataUse",JSON.stringify(dataUse))// dưa lên chỗ lưu trữ( JSON.stringify(dataUse) : chuyển array thành dạng json )
+                    alert("Bạn đã đăng ký thành công")
+                    }
                 console.log(data)
 
             }
