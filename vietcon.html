@@ -31,11 +31,11 @@
         </div>
         <ul class="nav">
             <li><a href="./homePage.html">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#review">Review</a></li>
-            <li><a href="#video">Video</a></li>
-            <li><a href="#founders">Founders</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="./homePage.html#about">About</a></li>
+            <li><a href="./homePage.html#review">Review</a></li>
+            <li><a href="./homePage.html#video">Video</a></li>
+            <li><a href="./homePage.html#founders">Founders</a></li>
+            <li><a href="./homePage.html#contact">Contact</a></li>
             <li class="user">
                 <a href="#contact"><i class="far fa-user-circle"></i> Log in</a>
                 <ul class="user-option">
@@ -43,7 +43,7 @@
                         <a href="">Sign In</a>
                     </li>
                     <li class="user-option-item">
-                        <a href="/form.html">Sign Up</a>
+                        <a href="/homePage.html#modal" onclick="startUser()">Sign Up</a>
                     </li>
                 </ul>
             </li>
@@ -174,7 +174,7 @@
                     <div class="card">
                         <h3>Popular Post</h3>
                         <img src="./image/anhvietcon/thuyennuoc.jpg" alt="popular" />
-                        <img src="./image/anhvietcon/dalat.jpg" alt="popular" />
+                        <img src="./image/anhvietcon/thuyennuoc.jpg" alt="popular" />
                         <img src="./image/anhvietcon/1cot.jpg" alt="popular" />
                         <img src="./image/anhvietcon/song.jpg" alt="popular" />
                     </div>
@@ -187,93 +187,9 @@
 
             <!-- comment start -->
 
-            <!-- <div class="comment/">
-
-                <div class="comment-hot/">
-                    <div class="row text-center">
-                        <div class="col-sm-6 col-md-4">
-                            <div class="testimonial-box">
-                                <div class="person1">
-                                <img src="./image/anhvietcon/cao-thai-son-02-2231-1621532735811729711832-1621584539635-1621584539816696478596.jpg"
-                                    class="img-responsive" alt="" width="90">
-                                <div class="ratings-icons">
-                                    &#9733&#9733&#9733&#9733&#9733
-                                </div>
-                                <h4>Cao Thái Sơn</h4>
-                                <p>&#10075 Công nhận là đi du lịch ở đây thích cực kì, nhưng rất tiếc mình chuẩn men, ko nói
-                                    nhiều cho 5 sao </p>
-    
-                            </div>
-                        </div>
-                    </div> <!-- End Col -->
-                        <!-- <div class="nguoi2">
-                        <div class="col-sm-6 col-md-4">
-                            <div class="testimonial-box">
-                                <img src="./image/anhvietcon/ngoctrinh.jpg">
-                                <div class="ratings-icons">
-                                    &#9733&#9733&#9733&#9733&#9733
-                                </div>
-                                <h4>Ngọc Trinh</h4>
-                                <p>&#10075 Mấy hôm nữa mình có show chụp ảnh ở đây đi trên rôn roy màu hồng, các bạn thích
-                                    thì đua
-                                    xe!</p>
-    
-                            </div>
-                        </div>
-                    </div><!-- End Col -->
-                        <!-- <div class="person3">
-                        <div class="col-sm-6 col-md-4">
-                            <div class="testimonial-box">
-                                <img src="./image/anhvietcon/unnamed-16216504337271534727568-1625186563783350914602.jpeg"
-                                    class="img-responsive" alt="" width="90">
-                                <div class="ratings-icons">
-                                    &#9733&#9733&#9733&#9733&#9733
-    
-                                </div>
-                                <h4>Khắc Việt</h4>
-                                <p>&#10075 Những chỗ này khung cảnh rất đẹp, mình đã sáng tác ra bài "Như Vậy Nhé" khi đến
-                                    Sapa</p>
-    
-                            </div> --> 
-                        <!-- </div> End Col
-                    </div>
-                    </div>
-                </div>
-    
-                <div class="comment-user/">
-                    <div class="dscomment">
-                        <div class="well">
-                            <hr data-brackets-id="12673">
-                            <img src="./image/anhvietcon/anh-dai-dien-nguoi-giau-mat.jpg">
-                            <strong class="ten1">Thái Công</strong>
-                            <small class="">
-                                <span class="glyphicon glyphicon-time"></span>7 mins ago</small>
-                            </br>
-                            <li class="ui-state-default">Tôi rất thích đi du lịch ở những nơi này</li>
-                            </br>
-                            <img src="./image/anhvietcon/2.jpg">
-                            <strong class="ten2">Hoàng Thúy</strong>
-                            <small class="">
-                                <span class="glyphicon glyphicon-time"></span>14 mins ago</small>
-                            </br>
-                            <li class="ui-state-default">Quả là một trải nghiệm tuyệt vời</li>
-    
-                            </ul>
-                            <div class="input-group">
-                                <textarea name="" placeholder="Your Message"></textarea>
-                                <button>Add comment</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div> --> 
-
-
-
             <div class="comment">
                 <div class="comment-title">
-                    <h2> <i class="fas fa-quote-left"></i>  Comment nổi bật</h2>
+                    <h1> <i class="fas fa-quote-left"></i>  Comment nổi bật</h1>
                 </div>
                 <div class="comment-hot">
                     <div class="user">
@@ -305,56 +221,74 @@
                     </div>
                 </div>
 
-
                 <div class="comment-user">
+                    
                     <hr>
+                    <h1><i class="fas fa-quote-left"></i> Comment: </h1>
                     <div class="comment-fake">
                         <div class="person-1">
                             <img src="./image/anhvietcon/lemiho.jpg">
-                            <div class="ten1">
+                            <div class="comment-fake-content">
                                 <h2>Thái Tuấn Công - 26 tuổi</h2>
                                 <span>7 phút trước</span>
-                                <br>
-                                <p>"Muốn tới Phú Quốc bạn có thể lựa chọn di chuyển bằng nhiều phương tiện khác nhau. Tụi mình chọn di chuyển bằng Máy bay từ Đà Nẵng tới Phú Quốc của hãng Bamboo (Vé 1tr2/khứ hồi/người – tổng 2tr4 tiền vé cho 2ng – đặt trước khoảng 2 tuần)</p>
-                        </div>
-                        </div>
-                        <div class="person-2">
-                            <img src="./image/anhvietcon/chipu.jpg">
-                            <strong class="ten2">Hoàng Văn Thúy - 24 tuổi </strong>
-                            <small>
-                                <span>14 phút trước</span>
-                            </small>
-                            <br>
-                            <p>"Chuyến đi của bọn mình không tham quan được hết tất cả những điểm du lịch, nhưng mình thấy khá là mãn nguyện, đi về nói chung là khỏe ạ. Nếu ở được lâu hơn thì còn rất nhiều nơi để khám phá. Mong rằng bài review này giúp được phần nhỏ các bạn đang có dự định đến đây.</p>
-                        </div>
-                        <div class="person-3">
-                            <img src="./image/anhvietcon/ronano.png">
-                            <strong class="ten2">Nguyễn Văn Tuấn - 22 tuổi </strong>
-                            <small>
-                                <span>30 phút trước</span>
-                            </small>
-                            <br>
-                            <p>"Điều mình thích nhất ở chuyến này chính là con đường ven biển đẹp nhất Việt Nam và đồ ăn ở 2 nơi chế biến rất okela, đậm vị vừa miệng lắm luôn, ăn bữa nào cũng thấy ngon.
-                                Lưu ý, chuyến đi này phải di chuyển rất nhiều nên lịch trình sẽ không phù hợp với bạn nào bánh bèo íu đuối, say xe nha.</p>
-                        </div>
-                        <div class="post--comment">
-                            <input type="text" class="post--comment__text" placeholder="Viết bình luận của bạn..." />
-                            <div class="post--comment__btn" onclick="">  
-                                <br>   
-                                <button>Đăng bình luận</button>
+                                
+                                <p><i class="fas fa-quote-left"></i> Muốn tới Phú Quốc bạn có thể lựa chọn di chuyển bằng nhiều phương tiện khác nhau. Tụi mình chọn di chuyển bằng Máy bay từ Đà Nẵng tới Phú Quốc của hãng Bamboo (Vé 1tr2/khứ hồi/người – tổng 2tr4 tiền vé cho 2ng – đặt trước khoảng 2 tuần)</p>
                             </div>
-                            <br>
-                            <h4>Bạn đang nghĩ gì?</h4>
                         </div>
+
+                        <div class="person-1">
+                            <img src="./image/anhvietcon/lemiho.jpg">
+                            <div class="comment-fake-content">
+                                <h2>Thái Tuấn Công - 26 tuổi</h2>
+                                <span>7 phút trước</span>
+                                
+                                <p><i class="fas fa-quote-left"></i> Muốn tới Phú Quốc bạn có thể lựa chọn di chuyển bằng nhiều phương tiện khác nhau. Tụi mình chọn di chuyển bằng Máy bay từ Đà Nẵng tới Phú Quốc của hãng Bamboo (Vé 1tr2/khứ hồi/người – tổng 2tr4 tiền vé cho 2ng – đặt trước khoảng 2 tuần)</p>
+                            </div>
+                        </div>
+
+                        <div class="person-1">
+                            <img src="./image/anhvietcon/lemiho.jpg">
+                            <div class="comment-fake-content">
+                                <h2>Thái Tuấn Công - 26 tuổi</h2>
+                                <span>7 phút trước</span>
+                                
+                                <p><i class="fas fa-quote-left"></i> Muốn tới Phú Quốc bạn có thể lựa chọn di chuyển bằng nhiều phương tiện khác nhau. Tụi mình chọn di chuyển bằng Máy bay từ Đà Nẵng tới Phú Quốc của hãng Bamboo (Vé 1tr2/khứ hồi/người – tổng 2tr4 tiền vé cho 2ng – đặt trước khoảng 2 tuần)</p>
+                            </div>
+                        </div>
+
+                        <div class="person-1">
+                            <img src="./image/anhvietcon/lemiho.jpg">
+                            <div class="comment-fake-content">
+                                <h2>Thái Tuấn Công - 26 tuổi</h2>
+                                <span>7 phút trước</span>
+                                
+                                <p><i class="fas fa-quote-left"></i> Muốn tới Phú Quốc bạn có thể lựa chọn di chuyển bằng nhiều phương tiện khác nhau. Tụi mình chọn di chuyển bằng Máy bay từ Đà Nẵng tới Phú Quốc của hãng Bamboo (Vé 1tr2/khứ hồi/người – tổng 2tr4 tiền vé cho 2ng – đặt trước khoảng 2 tuần)</p>
+                            </div>
+                        </div>
+
+                        <div class="person-1">
+                            <img src="./image/anhvietcon/lemiho.jpg">
+                            <div class="comment-fake-content">
+                                <h2>Thái Tuấn Công - 26 tuổi</h2>
+                                <span>7 phút trước</span>
+                                
+                                <p><i class="fas fa-quote-left"></i> Muốn tới Phú Quốc bạn có thể lựa chọn di chuyển bằng nhiều phương tiện khác nhau. Tụi mình chọn di chuyển bằng Máy bay từ Đà Nẵng tới Phú Quốc của hãng Bamboo (Vé 1tr2/khứ hồi/người – tổng 2tr4 tiền vé cho 2ng – đặt trước khoảng 2 tuần)</p>
+                            </div>
+                        </div>
+
                         
                     </div>
 
+                    <div class="comment-send">
+                        <img src="./image/anhvietcon/lemiho.jpg">
+                        <textarea name="" placeholder="Your Message"></textarea>
+                        <input type="submit" value="Send">
+                    </div>
                 </div>
             </div>
             <!-- comnent end -->
         </div>
     </div>
-
     <section class="contact" id="contact">
         
         <div class="content">
@@ -396,6 +330,7 @@
         </div>
     </section>
     <script src="./js/jsvietcon/vietcon.js"></script>
+    <script src="./js/homePage.js"></script>
 </body>
 
 
