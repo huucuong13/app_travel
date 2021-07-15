@@ -1,4 +1,7 @@
-
+function addComment(){
+    let userComment = document.getElementById("userComment").value;
+	document.getElementById("ui-state-default").innerHTML = userComment;
+}
 // slide
 let counter = 1;
 setInterval(function () {
