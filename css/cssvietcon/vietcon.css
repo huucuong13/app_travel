@@ -6,6 +6,9 @@
   scroll-behavior: smooth
 }
 
+.main {
+  background: #F5F5F5;
+}
 .container p{
   color: black;
   font-weight: bold;
@@ -174,16 +177,28 @@ header .nav li a:hover{
 
 /* header end */
 
+/* container title */
 
+.container-title {
+  margin: 10px 0 20px 0;
+  background: #fff;
+  border-radius: 5px;
+  padding: 2% 2%;
+}
+
+.container-title h2{
+  padding-bottom: 10px;
+
+}
 
 .nut{
   margin-top: 100px;
 }
 .container{
-background: #f1f1f1;
+background: #F5F5F5;
 height: 100%;
-margin: 70px 3% 3% 3%;
-padding: 2% 2%;
+margin: 0 3% 3% 3%;
+padding: 8% 2% 2% 2%;
 }
 .row1{
   display: flex;
@@ -195,23 +210,23 @@ padding: 2% 2%;
 .col-1{
   flex-basis: 40%;
   overflow-x: hidden;
-  background: rgb(89, 192, 206);
+  background: #fff;
   border-radius: 5px;
-  padding: 3% 3%;
+  padding: 1% 3%;
   margin-left: 10px;
 }
 .col-1 h2{
   color: red;
 }
 
-.col-1-comment fas{
-  padding-left: 5px;
+.col-1 .col-1-comment i{
+  margin-right: 10px;
 }
 
-.col-1-comment nut{
-  padding-left: 20px;
-
+.col-1 .col-1-comment a {
+  margin-right: 5px;
 }
+
 .col-1 .col-1-content_p p{
   margin: 0;
   
@@ -221,10 +236,14 @@ padding: 2% 2%;
   margin: 0;
 }
 
+.col-1 .danh_gia {
+  margin-bottom: 10px;
+}
+
 .slider{
   width: 800px;
   height: 500px;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
 }
 
@@ -247,6 +266,7 @@ padding: 2% 2%;
   width: 800px;
   height: 500px;
 }
+
 
 /*css for manual slide navigation*/
 
@@ -580,7 +600,7 @@ width: 75%;
 }
 .card{
 	padding: 20px;
-	background-color: #eb7f7f;
+	background-color: #fff;
  margin-top:20px;
 }
 
@@ -603,3 +623,160 @@ width: 75%;
 	}
 }
 
+
+/* CONTACT */
+.contact {
+  background: #ffbd17;
+}
+
+.content {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding: 50px 100px 20px 100px;
+}
+
+
+/* fromBx */
+
+.fromBx {
+  min-width: 60%;
+}
+
+.fromBx form{
+  display: flex;
+  flex-direction: column;
+}
+
+.fromBx form h3,
+.contactInfo h3
+{
+  color: #555;
+  font-size: 30px;
+  font-weight:bold ;
+
+}
+
+.fromBx form input,
+.fromBx form textarea
+{
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  outline: none;
+  background: #222;
+  color: #fff;
+  resize: none;
+  border-radius: 10px;
+}
+
+.fromBx form textarea {
+  min-height: 200px;
+}
+
+.fromBx form input::placeholder,
+.fromBx form textarea::placeholder {
+  color: rgba(153, 153, 153, 0.555);
+  font-weight: 700;
+}
+
+.fromBx form input[type="submit"] {
+  max-width: 120px;
+
+  background: #222;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  border-radius: 10px;
+
+}
+
+.contactInfo {
+  min-width: 40%;
+}
+
+.contactInfoBx {
+  position: relative;
+}
+
+.contactInfoBx .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.contactInfoBx .box .icon {
+  min-height: 40px;
+  padding-top: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 24px;
+}
+
+.contactInfoBx .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight:bold;
+}
+
+.contactInfoBx .box .text h3{
+  /* font-weight: 500; */
+  color: #111;
+}
+
+
+/* comment */
+
+.comment {
+  background: #fff;
+  padding: 1% 1%;
+  border-radius: 5px;
+  margin-top: 3%;
+}
+
+.comment .comment-title {
+  color: #444;
+  margin: 1% 0 1% 0;
+}
+.comment-hot {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.comment-hot .user {
+  width: 30%;
+  max-height: 400px;
+}
+
+.comment-hot .user img{
+  width: 100%;
+  height: 300px;
+
+  border-radius: 5px;
+  
+}
+
+.comment-hot .user .user-icon {
+  color: #FEC42D;
+  text-align: center;
+
+}
+
+.comment-hot .user h4,
+.comment-hot .user p {
+  text-align: center;
+}
+
+.comment-hot .user h4 {
+  font-size: 1.5em;
+}
