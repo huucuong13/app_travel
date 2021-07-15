@@ -1,79 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/homePage.css">
-    <link rel="stylesheet" href="./css/form.css">
-
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/homePage.css" />
+    <link rel="stylesheet" href="./css/form.css" />
+  </head>
+  <body>
     <div class="main">
-        <div class="header">
-            <h2>Create Account</h2>
+      <div class="header">
+        <h2>Create Account</h2>
+      </div>
+
+      <form action="" method="POST" class="form" id="form-1">
+        <div class="form-group">
+          <label for="fullname" class="form-laber">Username</label>
+          <input
+            id="fullname"
+            name="fullname"
+            type="text"
+            placeholder="VD: Hữu Cường"
+          />
+          <span class="form-message"></span>
         </div>
-        
-        <form action="" method="POST" class="form" id="form-1">
-            
-            <div class="form-group">
-                <label for="fullname" class="form-laber">Username</label>
-                <input  id="fullname" name="fullname" type="text" placeholder="VD: Hữu Cường" >
-                <span class="form-message"></span>
-            </div>
 
-            <div class="form-group">
-                <label for="email" class="form-laber">Email</label>
-                <input  id="email" name="email" type="text" placeholder="VD: huucuong@gmail.com">
-                <span class="form-message"></span>          
-            </div>
+        <div class="form-group">
+          <label for="email" class="form-laber">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="text"
+            placeholder="VD: huucuong@gmail.com"
+          />
+          <span class="form-message"></span>
+        </div>
 
-            <div class="form-group">
-                <label for="password" class="form-laber">Password</label>
-                <input  id="password" name="password" type="password" placeholder="Nhập mật khẩu">
-                <span class="form-message"></span>
-            </div>
+        <div class="form-group">
+          <label for="password" class="form-laber">Password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            placeholder="Nhập mật khẩu"
+          />
+          <span class="form-message"></span>
+        </div>
 
-            <div class="form-group">
-                <label for="password_confirmation" class="form-laber">Password check</label>
-                <input  id="password_confirmation" name="password_confirmation" type="password" placeholder="Nhập lại mật khẩu">
-                <span class="form-message"></span>
-            </div>
+        <div class="form-group">
+          <label for="password_confirmation" class="form-laber"
+            >Password check</label
+          >
+          <input
+            id="password_confirmation"
+            name="password_confirmation"
+            type="password"
+            placeholder="Nhập lại mật khẩu"
+          />
+          <span class="form-message"></span>
+        </div>
 
-            
-
-            <button class="form-submit">Submit</button>
-        </form>
+        <button class="form-submit" >Submit</button>
+      </form>
     </div>
     <script src="./js/validator.js"></script>
     <script>
+            validator({
+              form: "#form-1",
+              formGroupSelector: ".form-group",
+              errorSelector: ".form-message",
+              rules: [
+                validator.isRequired("#fullname", "Vui lòng nhập tên đầy đủ"),
+                validator.isRequired("#email"),
+                validator.isEmail("#email"),
+                validator.minLength("#password", 6),
+                validator.isRequired("#password_confirmation"),
+                validator.isConfirmed(
+                  "#password_confirmation",
+                  function () {
+                    return document.querySelector("#form-1 #password").value;
+                  },
+                  "Mật khẩu nhập lại không chính xác"
+                ),
+              ],
+              onSubmit: function (data) {
+                const dataUse = JSON.parse(localStorage.getItem("dataUse")); //lấy dữ liệu về
+                //đăng ký
+                if (!dataUse) {
+                  // thêm acc vào hệ thống khi chưa có dữ liệu
+                  const dataUse2 = [
+                    {
+                      id: "",
+                      email: "",
+                      password: "",
+                      fullName: "",
+                    },
+                  ];
+                  dataUse2[0].id = dataUse2.length;
+                  dataUse2[0].email = document.getElementById("email").value;
+                  dataUse2[0].password = document.getElementById("password").value;
+                  dataUse2[0].fullName = document.getElementById("fullname").value;
+                  localStorage.setItem("dataUse", JSON.stringify(dataUse2));
+                  console.log(JSON.parse(localStorage.getItem("dataUse")));
+                }
+                console.log(data);
+                if (dataUse) {
+                  //thêm acc vào hệ thống khi có dữ liệu
+                  const x = Object.assign({}, dataUse[0]); // thêm 1 objec mới
+                  dataUse.push(x); //thêm giá trị mới của array là objec
+                  dataUse[dataUse.length - 1].id = dataUse.length; //thêm id
+                  dataUse[dataUse.length - 1].email =
+                    document.getElementById("email").value; // thêm email
+                  dataUse[dataUse.length - 1].password =
+                    document.getElementById("password").value; //thêm pass
+                  dataUse[dataUse.length - 1].fullname =
+                    document.getElementById("fullname").value;
+                  console.log(dataUse);
+                  localStorage.setItem("dataUse", JSON.stringify(dataUse)); // dưa lên chỗ lưu trữ( JSON.stringify(dataUse) : chuyển array thành dạng json )
+                }
+                console.log(data);
 
-        validator({
-            form: '#form-1',
-            formGroupSelector: '.form-group',
-            errorSelector: '.form-message',
-            rules: [
-                validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ'),
-                validator.isRequired('#email'),
-                validator.isEmail('#email'),
-                validator.minLength('#password', 6),
-                validator.isRequired('#password_confirmation'),
-                validator.isConfirmed('#password_confirmation', function () {
-                    return document.querySelector('#form-1 #password').value;
-                }, 'Mật khẩu nhập lại không chính xác'),
-            ],
-            onSubmit: function (data) {
-                // call AIP
-                console.log(data)
-
-            }
-
+                alert("Bạn đã đăng ký thành công");
+                location.assign("./homePage.html");
+                
+            },
         });
+
+        // function ve_homepage() { // ấn đăng ký trở về trang chủ
+        //     alert("Bạn đã đăng ký thành công");
+        //     location.assign("./homePage.html");
+        // }
+        
+        
+        //đăng nhập
+
+        
+        // let z = prompt(`test`)
+        // for (let x = 0; x < dataUse.length; x++) { //chạy vòng for để đăng nhập
+        // if(z == dataUse[x].email){
+        // console.log(dataUse[x].email)}
+
     </script>
-</body>
+  </body>
 </html>
