@@ -6,11 +6,11 @@
   scroll-behavior: smooth
 }
 
-a{
+.nut a{
   text-decoration: none;
   color: #555;
 }
-p{
+.container p{
   color: black;
   font-weight: bold;
   margin: 20px;
@@ -225,15 +225,37 @@ margin-right: 20px;
   justify-content: center;
   overflow: hidden;
 }
+
+
 .col-1{
   flex-basis: 40%;
   overflow-x: hidden;
-  background: linear-gradient(rgb(231, 195, 231), rgb(204, 216, 247));
+  background: #f1f1f1;
   border-radius: 5px;
+  padding: 3% 3%;
+  margin-left: 10px;
 }
 .col-1 h2{
   color: red;
 }
+
+.col-1-comment fas{
+  padding-left: 5px;
+}
+
+.col-1-comment nut{
+  padding-left: 20px;
+
+}
+.col-1 .col-1-content_p p{
+  margin: 0;
+  
+}
+
+.col-1 .col-1-content p{
+  margin: 0;
+}
+
 .slider{
   width: 800px;
   height: 500px;
