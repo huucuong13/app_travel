@@ -6,14 +6,10 @@
   scroll-behavior: smooth
 }
 
-.nut a{
-  text-decoration: none;
-  color: #555;
-}
 .container p{
   color: black;
   font-weight: bold;
-  margin: 20px;
+
 }
 
 /* header */
@@ -184,41 +180,10 @@ header .nav li a:hover{
   margin-top: 100px;
 }
 .container{
+background: #f1f1f1;
 height: 100%;
-margin-top: 20px;
-}
-.nut--like {
-padding: 5px 5px;
-background: #3543c0;
-font-size: 13px;
-border-radius: 5px;
-color: #e8efff;
-outline: none;
-border: none;
-cursor: pointer;
-margin-right: 20px;
-}
-.nut--pinterest {
-padding: 5px 5px;
-background: #bb2323;
-font-size: 13px;
-border-radius: 5px;
-color: #e8efff;
-outline: none;
-border: none;
-cursor: pointer;
-margin-right: 20px;
-}
-.nut--twitter {
-padding: 5px 5px;
-background: #8692ff;
-font-size: 13px;
-border-radius: 5px;
-color: #e8efff;
-outline: none;
-border: none;
-cursor: pointer;
-margin-right: 20px;
+margin: 70px 3% 3% 3%;
+padding: 2% 2%;
 }
 .row1{
   display: flex;
@@ -230,7 +195,7 @@ margin-right: 20px;
 .col-1{
   flex-basis: 40%;
   overflow-x: hidden;
-  background: #f1f1f1;
+  background: rgb(89, 192, 206);
   border-radius: 5px;
   padding: 3% 3%;
   margin-left: 10px;
@@ -387,6 +352,7 @@ margin-right: 20px;
 }
 
 .anh--comment{
+display: flex;
 margin: 20px;
 height: 100%;
 place-items: center;
