@@ -27,10 +27,10 @@ window.addEventListener('scroll', function () {
 // Start_user
 
 var modal = document.getElementById("modal");
-var myModal = document.getElementById("myModal");
-function stopUser () {
-    modal.style.display ="none"
-}
+// var myModal = document.getElementById("myModal");
+// function stopUser () {
+//     modal.style.display ="none"
+// }
 function startUser () {
     modal.style.display ="block";
 }
