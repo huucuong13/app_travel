@@ -224,84 +224,28 @@ header .nav li a:hover{
 
 
 
-.user-option-item
+
+
+
 /* About */
-
-/* .about {
-    background-color: #7AD3E5;
-    width: 100%;
-    height: 100vh;
-}
-
-.row {
-    position: relative;
-    width: 100%;
-    display: flex;
-    margin: 5px 5px;
-}
-
-.row .about-song img {
-    position: absolute;
-    
-    top: 10px;
-    left: 40%;
-    
-}
-.row .col {
-    position: relative;
-    width: 100%;
-}
-
-.about-title {
-    color: #fff;
-    font-size: 2em;
-    font-weight: 600;
-    background: #ffbd17;
-    width: 200px;
-    text-align: center;
-    margin: 91px 0 20px 0;
-    border-radius: 0 50px 50px 5px;
-}
-
-.about-title span{
-    color: #fff;
-    font-weight: 700;
-    font-size: 1.5em;
-}
-
-.col-text {
-    color: #111;
-    font-size: 1em;
-    font-weight: 600;
-    padding: 40px 10px 0 40px;
-}
-
-.col-img {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-.row img{
-    position: absolute;
-    bottom: -35px;
-    left: 0;
-    scroll-behavior: smooth;
-} */
 
 .about {
     width: 100%;
     max-height: 100vh;
-
+    overflow: hidden;  
 }
 
 .about .row {
-    
     background: url(../image/img-cuong/about2.png);
-    object-fit: cover;
+    width: 100%;
+    height: 100vh;
 }
 
-/* .about .row .about-song {
-} */
+.about .row .about-song {
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+}
 
 .about .about-title {
     background: #ffbd17;
@@ -312,28 +256,36 @@ header .nav li a:hover{
     border-radius: 0 50px 50px 0px;
     padding-left: -40px;
     color: #fff;
-
 }
 
 
 .about .row .col {
     display: flex;
-    width: 100%;
-    max-height: 100vh;
-    
+    flex: 1;
+    width: 80%;
+    justify-content: space-evenly;
+    padding-top: 3%;
+
 
 }
 
 .about .row .col .col1 {
     width: 35%;
-    height: 500px;
+    max-height: 500px;
+    overflow: hidden;
 }
+.about .row .col .col1 p{
+    font-weight: bold;
 
+}
 .about .row .col .col2 {
-    max-width: 35%;
+    max-width: 40%;
 
 }
 
+.about .row .col .col2 img{
+    width: 100%;
+}
 
 /* REVIEW */
 .review {
@@ -343,7 +295,7 @@ header .nav li a:hover{
     background-position: center;
     background-attachment:fixed ;
     padding-bottom: 30px;
-   
+    min-height: 100vh;
     
 }
 
@@ -363,13 +315,10 @@ header .nav li a:hover{
     text-align: center;
     border-radius: 0 50px 50px 0px;
     padding-left: -40px;
+    color: #fff;
+    padding-top: 0.5%;
 }
 
-.review-title .title span{
-    color: #fff;
-    font-weight: 700;
-    font-size: 1.5em;
-}
 
 /* SEARCH */
 .search { 
@@ -402,13 +351,14 @@ header .nav li a:hover{
     font-size: 1rem;
 }
 
-
+/* review-content */
 .review .review-content {
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
     flex-wrap: wrap ;
     margin-top: 10px;
+   
 }
 
 .review .review-content .content-box {
@@ -455,7 +405,7 @@ header .nav li a:hover{
 }
 
 .review .review-content .content-box:hover{
-    transform: scale(1.1);
+    transform: scale(1.025);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
 
