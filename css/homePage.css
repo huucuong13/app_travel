@@ -90,12 +90,9 @@ header.sticky {
     background: #fff;
     padding: 0px 50px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.062);
-   
-
 }
 
 header .logo {
-    /* background: #ffdbbf3f; */
     border-radius: 10px;
     
 }
@@ -118,10 +115,7 @@ header .nav li a{
 }
 
 header .nav li a .logIn {
-    /* font-size: 25px; */
     text-align: center;
-
-
 }
 
 header .nav li a .far {
@@ -331,10 +325,14 @@ header .nav li a:hover{
 }
 
 .about .row .col .col1 {
-    width: 30%;
+    width: 35%;
     height: 500px;
 }
 
+.about .row .col .col2 {
+    max-width: 35%;
+
+}
 
 
 /* REVIEW */
