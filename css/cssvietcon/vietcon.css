@@ -227,13 +227,16 @@ padding: 8% 2% 2% 2%;
   margin-right: 5px;
 }
 
+
 .col-1 .col-1-content_p p{
   margin: 0;
   
 }
 
-.col-1 .col-1-content p{
-  margin: 0;
+.col-1 .col-1-content {
+ 
+  min-height: 250px;
+  
 }
 
 .col-1 .danh_gia {
@@ -443,11 +446,8 @@ width: 75%;
 
 .content {
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
   padding: 50px 100px 20px 100px;
 }
-
 
 /* fromBx */
 
