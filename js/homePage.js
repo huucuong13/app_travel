@@ -24,16 +24,7 @@ window.addEventListener('scroll', function () {
     video.style.opacity = value
 })
 
-// Start_user
 
-var modal = document.getElementById("modal");
-// var myModal = document.getElementById("myModal");
-// function stopUser () {
-//     modal.style.display ="none"
-// }
-function startUser () {
-    modal.style.display ="block";
-}
 
 // layout
 
