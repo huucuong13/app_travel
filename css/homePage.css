@@ -393,6 +393,7 @@ header .nav li a:hover{
     width: 100%;
     max-height: 52px;
     overflow: hidden;
+    font-weight: 500;
 }
 
 .review .review-content .content-box .box-text .box-like p{
@@ -412,6 +413,11 @@ header .nav li a:hover{
 .review .review-content .content-box .box-text .box-like i{
     padding-left: 5px;
 }
+
+.review .review-content .content-box .box-text .box-like .fas.fa-heart{
+    color: red;
+}
+
 
 .review .review-content .content-box:hover{
     transform: scale(1.025);
@@ -451,13 +457,13 @@ header .nav li a:hover{
 
 .video .video-content .video-row .col .feature-img{transition: 0.5s ease;}
 .video .video-content .video-row .col .feature-img:hover{
-    transform: scale(1.1);
+    transform: scale(1.02);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
 
 .video .video-content .video-row .col .small-img-row{transition: 0.5s ease;}
 .video .video-content .video-row .col .small-img-row:hover{
-    transform: scale(1.1);
+    transform: scale(1.02);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
 

@@ -35,3 +35,46 @@ for (let i = 0; i < startLayout.length; i++) {
     })
 }
 
+// API 
+// let layoutReview = [
+//     {
+//         id: 1,
+//         h3: 'da lat',
+        
+//     }
+// ]
+
+// let templateHTML = ``;
+// for (let i = 0; i < layoutReview.length; i++) {
+//     templateHTML += `<div  class="content-box" id="startLayout 1" onclick="startLayout(${i})"  >
+//     <div class="box-img">
+//         <img src="./image/img-cuong/review_img.png" alt="">
+//     </div>
+//     <div class="box-text">
+//         <h3>Sa Pa</h3>
+//         <p>Chia sẻ lại bài Review phượt SAPA 3 ngày 2 đêm của bạn Ngọc Vũ</p>
+//         <div class="box-like">
+//             <p>Reviewer: Ngọc Vũ</p>
+//             <div class="box-like-icon">
+//                 <i class="fas fa-heart"> </i> 200
+//                 <i class="far fa-comment-alt"></i> 300
+//             </div>
+//         </div>
+//     </div>
+// </div>`
+// };
+
+// function changeLayout(index) {
+//     localStorage.setItem('ad',1);
+// }
+// reviewDiv.innerHTML = templateHTML;
+
+// const layoutReview = JSON.parse(localStorage.getItem(layoutReview));
+
+// layoutReview[1].comment.push({
+//     id:1
+
+// })
+
+// document.getElementById("").appendChild();
+// localStorage.setItem("layoutReview", JSON.stringify(layoutReview));
