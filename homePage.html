@@ -1,157 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review Travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/homePage.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/cssvietcon/vietcon.css">
+</head>
+<body>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/homePage.css" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/cssvietcon/vietcon.css" />
-  </head>
-  <body>
     <!-- HOME PAGE  -->
 
     <header>
-      <a href="#banner" class="logo"
-        ><img src="./image/img-cuong/review (1).png" alt="logo" class="logo"
-      /></a>
-      <div class="header_search">
-        <input
-          type="text"
-          class="header_search-input"
-          placeholder="Search review"
-        />
-        <button class="header_search-btn">
-          <i class="header_search-btn-icon fas fa-search"></i>
-        </button>
-      </div>
-      <ul class="nav">
-        <li><a href="#banner">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#review">Review</a></li>
-        <li><a href="#video">Video</a></li>
-        <li><a href="#founders">Founders</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li class="user">
-          <a href="#modal" onclick="startUser()"
-            ><i class="far fa-user-circle"></i> Log in</a
-          >
-          <ul class="user-option">
-            <li class="user-option-item">
-              <a href="./formDN.html">Sign In</a>
+        <a href="#banner" class="logo"><img src="./image/img-cuong/review (1).png" alt="logo" class="logo"></a>
+        <div class="header_search">
+
+            <input type="text" class="header_search-input" placeholder="Search review">
+            <button class="header_search-btn">
+                <i class="header_search-btn-icon fas fa-search"></i>
+            </button>
+            
+        </div>
+        <ul class="nav">
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#review">Review</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#founders">Founders</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="user">
+                <a href="./signIn.html" onclick="startUser()"><i class="far fa-user-circle"></i> Log in</a>
+                <ul class="user-option">
+                    <li class="user-option-item">
+                        <a href="./signIn.html">Sign In</a>
+                    </li>
+                    <li class="user-option-item">
+                        <a href="./form.html" >Sign Up</a>
+                    </li>
+                </ul>
             </li>
-            <li class="user-option-item">
-              <a href="./form.html">Sign Up</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
+
+        </ul>
     </header>
     <section class="banner" id="banner">
-      <div class="banner-content">
-        <video
-          class="video-banner"
-          src="./video/video.mp4"
-          autoplay
-          loop
-          muted
-        ></video>
-        <h2>REVIEW TRAVEL</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <a href="#about" class="btn-Banner">About</a>
-      </div>
-      <div class="wave"></div>
+        <div class="banner-content">
+            <video class="video-banner" src="./video/video.mp4" autoplay loop muted></video>
+            <h2>REVIEW TRAVEL</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <a href="#about" class="btn-Banner">About</a>
+        </div>
+        <div class="wave"></div>
     </section>
 
-    <section class="about" id="about">
-      <div class="row">
-        <div class="about-song">
-          <img src="./image/img-cuong/Thiết kế không tên (3).png" alt="" />
-        </div>
-        <h2 class="about-title"><span>A</span>bout Us</h2>
-        <div class="col">
-          <div class="col1">
-            <p class="col-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus officia nulla tempore delectus qui, ratione
-              deserunt dolor ut. Sint tempora dolorum perferendis optio quam.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aspernatur laboriosam aut dignissimos nemo possimus odio similique
-              reprehenderit id inventore assumenda. Id sit ducimus porro hic
-              reprehenderit qui. Eum, amet adipisci? <br />
-              <br />
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
-              totam commodi dicta ab quidem ut rem pariatur veniam autem
-              distinctio? Iste dolor laborum sit dicta iure asperiores quas
-              tempore assumenda!
-            </p>
-          </div>
-          <div class="col2">
-            <div class="col-img">
-              <img src="./image/img-cuong/img-about.png" alt="" />
+    <section class="about" id = "about">
+        
+        <div class="row">
+            <div class="about-song"><img src="./image/img-cuong/Thiết kế không tên (3).png" alt=""></div>
+            <h2 class="about-title"><span>A</span>bout Us</h2>
+            <div class="col">
+                <div class="col1"> 
+                    <p class="col-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus officia nulla tempore delectus qui, ratione deserunt dolor ut. Sint tempora dolorum perferendis optio quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laboriosam aut dignissimos nemo possimus odio similique reprehenderit id inventore assumenda. Id sit ducimus porro hic reprehenderit qui. Eum, amet adipisci? <br> <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit totam commodi dicta ab quidem ut rem pariatur veniam autem distinctio? Iste dolor laborum sit dicta iure asperiores quas tempore assumenda!</p>
+                </div>
+                <div class="col2">
+                    <div class="col-img"><img src="./image/img-cuong/img-about.png" alt=""></div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <section class="review" id="review">
-      <div class="review-title">
-        <h2 class="title"><span>R</span>eview</h2>
-        <div class="search">
-          <div class="input">
-            <input
-              type="text"
-              class="input-search"
-              placeholder="Search review"
-            />
-          </div>
-          <div class="icon"><i class="fas fa-search"></i></div>
-        </div>
-      </div>
-      <!-- <button class="control">next</button> -->
-      <div class="review-content">
-        <div class="content-box" id="startLayout" onclick="startLayout()">
-          <div class="box-img">
-            <img src="./image/img-cuong/review_img.png" alt="" />
-          </div>
-          <div class="box-text">
-            <h3>Đà Lạt</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="box-like">
-              <p>Reviewer: Cường</p>
-              <div class="box-like-icon">
-                <i class="far fa-heart"> 200</i>
-                <i class="far fa-comment-alt"> 800</i>
-              </div>
+    <section class="review" id= "review">
+        
+        <div class="review-title">
+            <h2 class="title"><span>R</span>eview</h2>
+            <div class="search">
+                <div class="input"><input type="text" class="input-search" placeholder="Search review" ></div>
+                <div class="icon"><i class="fas fa-search"></i></div>
             </div>
-          </div>
         </div>
-
-
-        <div class="content-box" id="startLayout" onclick="startLayout()">
-          <div class="box-img">
-            <img src="./image/img-cuong/review_img.png" alt="" />
-          </div>
-          <div class="box-text">
-            <h3>Đà Lạt</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="box-like">
-              <p>Reviewer: Cường</p>
-              <i class="far fa-heart"> 200</i>
-              <i class="far fa-comment-alt"> 800</i>
+        <!-- <button class="control">next</button> -->
+        <div class="review-content" >
 
             <div  class="content-box" id="startLayout " onclick="startLayout()"  >
                 <div class="box-img">
@@ -185,23 +118,7 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-          </div>
-        </div>
-
-
-        <div class="content-box">
-          <div class="box-img">
-            <img src="./image/img-cuong/review_img.png" alt="" />
-          </div>
-          <div class="box-text">
-            <h3>Đà Lạt</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="box-like">
-              <p>Reviewer: Cường</p>
-              <i class="far fa-heart"> 200</i>
-              <i class="far fa-comment-alt"> 800</i>
 
             <div  class="content-box" id="startLayout" onclick="startLayout()"  >
                 <div class="box-img">
@@ -218,55 +135,7 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-          </div>
-        </div>
-
-
-        <div class="content-box">
-          <div class="box-img">
-            <img src="./image/img-cuong/review_img.png" alt="" />
-          </div>
-          <div class="box-text">
-            <h3>Đà Lạt</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="box-like">
-              <p>Reviewer: Cường</p>
-              <i class="far fa-heart"> 200</i>
-              <i class="far fa-comment-alt"> 800</i>
-            <div  class="content-box" id="startLayout" onclick="startLayout()"  >
-                <div class="box-img">
-                    <img src="./image/img-cuong/review_img.png" alt="">
-                </div>
-                <div class="box-text">
-                    <h3>Sa Pa</h3>
-                    <p>Chia sẻ lại bài Review phượt SAPA 3 ngày 2 đêm của bạn Ngọc Vũ</p>
-                    <div class="box-like">
-                        <p>Reviewer: Ngọc Vũ</p>
-                        <div class="box-like-icon">
-                            <i class="fas fa-heart"> </i> 200
-                            <i class="far fa-comment-alt"></i> 300
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-          </div>
-        </div>
-
-
-        <div class="content-box">
-          <div class="box-img">
-            <img src="./image/img-cuong/review_img.png" alt="" />
-          </div>
-          <div class="box-text">
-            <h3>Đà Lạt</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="box-like">
-              <p>Reviewer: Cường</p>
-              <i class="far fa-heart"> 200</i>
-              <i class="far fa-comment-alt"> 800</i>
 
             <div  class="content-box" id="startLayout" onclick="startLayout()"  >
                 <div class="box-img">
@@ -283,23 +152,7 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-          </div>
-        </div>
-
-
-        <div class="content-box">
-          <div class="box-img">
-            <img src="./image/img-cuong/review_img.png" alt="" />
-          </div>
-          <div class="box-text">
-            <h3>Đà Lạt</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="box-like">
-              <p>Reviewer: Cường</p>
-              <i class="far fa-heart"> 200</i>
-              <i class="far fa-comment-alt"> 800</i>
 
             <div  class="content-box" id="startLayout" onclick="startLayout()"  >
                 <div class="box-img">
@@ -316,23 +169,7 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-          </div>
-        </div>
-
-
-        <div class="content-box">
-          <div class="box-img">
-            <img src="./image/img-cuong/review_img.png" alt="" />
-          </div>
-          <div class="box-text">
-            <h3>Đà Lạt</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="box-like">
-              <p>Reviewer: Cường</p>
-              <i class="far fa-heart"> 200</i>
-              <i class="far fa-comment-alt"> 800</i>
 
             <div  class="content-box" id="startLayout" onclick="startLayout()"  >
                 <div class="box-img">
@@ -349,22 +186,7 @@
                         </div>
                     </div>
                 </div>
-
-          </div>
-        </div>
-
-
-        <div class="content-box">
-          <div class="box-img">
-            <img src="./image/img-cuong/review_img.png" alt="" />
-          </div>
-          <div class="box-text">
-            <h3>Đà Lạt</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="box-like">
-              <p>Reviewer: Cường</p>
-              <i class="far fa-heart"> 200</i>
-              <i class="far fa-comment-alt"> 800</i>
+            </div>
 
             <div  class="content-box" id="startLayout" onclick="startLayout()"  >
                 <div class="box-img">
@@ -381,25 +203,24 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-          </div>
-        </div>
 
-
-        <div class="content-box">
-          <div class="box-img">
-            <img src="./image/img-cuong/review_img.png" alt="" />
-          </div>
-          <div class="box-text">
-            <h3>Đà Lạt</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="box-like">
-              <p>Reviewer: Cường</p>
-              <i class="far fa-heart"> 200</i>
-              <i class="far fa-comment-alt"> 800</i>
+            <div  class="content-box" id="startLayout" onclick="startLayout()"  >
+                <div class="box-img">
+                    <img src="./image/img-cuong/review_img.png" alt="">
+                </div>
+                <div class="box-text">
+                    <h3>Sa Pa</h3>
+                    <p>Chia sẻ lại bài Review phượt SAPA 3 ngày 2 đêm của bạn Ngọc Vũ</p>
+                    <div class="box-like">
+                        <p>Reviewer: Ngọc Vũ</p>
+                        <div class="box-like-icon">
+                            <i class="fas fa-heart"> </i> 200
+                            <i class="far fa-comment-alt"></i> 300
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
 
             <div  class="content-box" id="startLayout" onclick="startLayout()"  >
                 <div class="box-img">
@@ -422,239 +243,141 @@
 
             
             
-
         </div>
-      </div>
-      <!-- <button class="control">next</button> -->
+        <!-- <button class="control">next</button> -->
     </section>
 
     <section class="video" id="video">
-      <div class="video-content">
-        <h1>VIDEO REVIEW DA LAP</h1>
-        <div class="video-row">
-          <div class="col">
-            <div class="feature-img">
-              <img
-                src="./image/img-cuong/Vid_gallery_Img/Đà_lat1.png"
-                width="100%"
-                alt=""
-              />
-              <img
-                src="./image/img-cuong/Vid_gallery_Img/play.png"
-                alt=""
-                class="play-btn"
-                onclick="playVideo('./video/da_lat12.mp4')"
-              />
+        <div class="video-content">
+            <h1>VIDEO REVIEW DA LAP</h1>
+            <div class="video-row">
+                <div class="col">
+                    <div class="feature-img">
+                        <img src="./image/img-cuong/Vid_gallery_Img/Đà_lat1.png" width="100%" alt="">
+                        <img src="./image/img-cuong/Vid_gallery_Img/play.png" alt="" class="play-btn" onclick="playVideo('./video/da_lat12.mp4')">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="./image/img-cuong/Vid_gallery_Img/col1.png" alt="">
+                            <img src="./image/img-cuong/Vid_gallery_Img/play.png" alt="" class="play-btn" onclick="playVideo('./video/video_col1.mp4')">
+                        </div>
+                        <p>How to mulltiple videos in a website or<br> to make a video gallery</p>
+                    </div>
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="./image/img-cuong/Vid_gallery_Img/col2.png" alt="">
+                            <img src="./image/img-cuong/Vid_gallery_Img/play.png" alt="" class="play-btn" onclick="playVideo('./video/video_col2.mp4')">
+                        </div>
+                        <p>How to mulltiple videos in a website or<br> to make a video gallery</p>
+                    </div>
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="./image/img-cuong/Vid_gallery_Img/col3.png" alt="">
+                            <img src="./image/img-cuong/Vid_gallery_Img/play.png" alt="" class="play-btn" onclick="playVideo('./video/video_col3.mp4')">
+                        </div>
+                        <p>How to mulltiple videos in a website or<br> to make a video gallery</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="small-img-row">
-              <div class="small-img">
-                <img src="./image/img-cuong/Vid_gallery_Img/col1.png" alt="" />
-                <img
-                  src="./image/img-cuong/Vid_gallery_Img/play.png"
-                  alt=""
-                  class="play-btn"
-                  onclick="playVideo('./video/video_col1.mp4')"
-                />
-              </div>
-              <p>
-                How to mulltiple videos in a website or<br />
-                to make a video gallery
-              </p>
+            <div class="video-player" id="videoPlayer">
+                <video width="50%" height="450px"  controls autoplay id="myVideo">
+                    <source src="" type="video/mp4">
+                </video>
+                <img src="./image/img-cuong/Vid_gallery_Img/close.png" alt="close-btn" class="close-btn" onclick="stopVideo()">
             </div>
-            <div class="small-img-row">
-              <div class="small-img">
-                <img src="./image/img-cuong/Vid_gallery_Img/col2.png" alt="" />
-                <img
-                  src="./image/img-cuong/Vid_gallery_Img/play.png"
-                  alt=""
-                  class="play-btn"
-                  onclick="playVideo('./video/video_col2.mp4')"
-                />
-              </div>
-              <p>
-                How to mulltiple videos in a website or<br />
-                to make a video gallery
-              </p>
-            </div>
-            <div class="small-img-row">
-              <div class="small-img">
-                <img src="./image/img-cuong/Vid_gallery_Img/col3.png" alt="" />
-                <img
-                  src="./image/img-cuong/Vid_gallery_Img/play.png"
-                  alt=""
-                  class="play-btn"
-                  onclick="playVideo('./video/video_col3.mp4')"
-                />
-              </div>
-              <p>
-                How to mulltiple videos in a website or<br />
-                to make a video gallery
-              </p>
-            </div>
-          </div>
         </div>
-        <div class="video-player" id="videoPlayer">
-          <video width="50%" height="450px" controls autoplay id="myVideo">
-            <source src="" type="video/mp4" />
-          </video>
-          <img
-            src="./image/img-cuong/Vid_gallery_Img/close.png"
-            alt="close-btn"
-            class="close-btn"
-            onclick="stopVideo()"
-          />
-        </div>
-      </div>
     </section>
 
     <section class="founders" id="founders">
-      <h1 class="heading"><span>Founders Us</span></h1>
-      <div class="box-container">
-        <div class="box">
-          <img src="./image/img-cuong/profile/cuong.jpg" alt="" />
-          <div class="info">
-            <h3>Hữu Cường</h3>
-            <span>Yêu cái đẹp, ghét sự giả dối</span>
-            <div class="share">
-              <a
-                href="https://www.facebook.com/cuong.huu.9883739"
-                class="fab fa-facebook-f"
-              ></a>
-              <a
-                href="https://www.facebook.com/cuong.huu.9883739"
-                class="fab fa-instagram"
-              ></a>
-              <a
-                href="https://www.facebook.com/cuong.huu.9883739"
-                class="fab fa-twitter"
-              ></a>
+        <h1 class="heading"><span>Founders Us</span></h1>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="./image/img-cuong/profile/cuong.jpg" alt="">
+                <div class="info">
+                    <h3>Hữu Cường</h3>
+                    <span>Yêu cái đẹp, ghét sự giả dối</span>
+                    <div class="share">
+                        <a href="https://www.facebook.com/cuong.huu.9883739" class="fab fa-facebook-f" ></a>
+                        <a href="https://www.facebook.com/cuong.huu.9883739" class="fab fa-instagram"></a>
+                        <a href="https://www.facebook.com/cuong.huu.9883739" class="fab fa-twitter"></a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="box">
-          <img src="./image/img-cuong/profile/viet.jpg" alt="" />
-          <div class="info">
-            <h3>Việt</h3>
-            <span>Yêu cái đẹp, ghét sự giả dối</span>
-            <div class="share">
-              <a href="#" class="fab fa-facebook-f"></a>
-              <a href="#" class="fab fa-instagram"></a>
-              <a href="#" class="fab fa-twitter"></a>
+            <div class="box">
+                <img src="./image/img-cuong/profile/viet.jpg" alt="">
+                <div class="info">
+                    <h3>Việt</h3>
+                    <span>Yêu cái đẹp, ghét sự giả dối</span>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="box">
-          <img src="./image/img-cuong/profile/minh.jpg" alt="" />
-          <div class="info">
-            <h3>Minh</h3>
-            <span>Yêu cái đẹp, ghét sự giả dối</span>
-            <div class="share">
-              <a href="#" class="fab fa-facebook-f"></a>
-              <a href="#" class="fab fa-instagram"></a>
-              <a href="#" class="fab fa-twitter"></a>
+            <div class="box">
+                <img src="./image/img-cuong/profile/minh.jpg" alt="">
+                <div class="info">
+                    <h3>Minh</h3>
+                    <span>Yêu cái đẹp, ghét sự giả dối</span>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <section class="contact" id="contact">
-      <div class="content">
-        <div class="contactInfo">
-          <h3>Contact Info</h3>
-          <div class="contactInfoBx">
-            <div class="box">
-              <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-              <div class="text">
-                <h3>Address</h3>
-                <p>Thị-Trấn-Phùng,<br />Đan Phượng,<br />HN</p>
-              </div>
+        
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Thị-Trấn-Phùng,<br>Đan Phượng,<br>HN</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-phone"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>0979098834</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="far fa-envelope"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>1311huucuong@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="box">
-              <div class="icon"><i class="fas fa-phone"></i></div>
-              <div class="text">
-                <h3>Phone</h3>
-                <p>0979098834</p>
-              </div>
+            <div class="fromBx">
+                <form action="">
+                    <h3>Message Me</h3>
+                    <input type="text" name="" placeholder="Full Name">
+                    <input type="email" name="" placeholder="Email">
+                    <textarea name="" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send">
+                </form>
             </div>
-            <div class="box">
-              <div class="icon"><i class="far fa-envelope"></i></div>
-              <div class="text">
-                <h3>Email</h3>
-                <p>1311huucuong@gmail.com</p>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="fromBx">
-          <form action="">
-            <h3>Message Me</h3>
-            <input type="text" name="" placeholder="Full Name" />
-            <input type="email" name="" placeholder="Email" />
-            <textarea name="" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send" />
-          </form>
-        </div>
-      </div>
     </section>
 
     <!-- End HOME PAGE  -->
-
-
-    <div class="modal" id="modal">
-      <div class="body">
-        <a href="./homePage.html">home</a>
-        <!-- <div class="main">
-                <div class="header">
-                    <h2>Create Account</h2>
-                </div>
-                
-                <form action="" method="POST" class="form" id="form-1">
-                    
-                    <div class="form-group">
-                        <label for="fullname" class="form-laber">Username</label>
-                        <input  id="fullname" name="fullname" type="text" placeholder="VD: Hữu Cường" >
-                        <span class="form-message"></span>
-                    </div>
-        
-                    <div class="form-group">
-                        <label for="email" class="form-laber">Email</label>
-                        <input  id="email" name="email" type="text" placeholder="VD: huucuong@gmail.com">
-                        <span class="form-message"></span>          
-                    </div>
-        
-                    <div class="form-group">
-                        <label for="password" class="form-laber">Password</label>
-                        <input  id="password" name="password" type="password" placeholder="Nhập mật khẩu">
-                        <span class="form-message"></span>
-                    </div>
-        
-                    <div class="form-group">
-                        <label for="password_confirmation" class="form-laber">Password check</label>
-                        <input  id="password_confirmation" name="password_confirmation" type="password" placeholder="Nhập lại mật khẩu">
-                        <span class="form-message"></span>
-                    </div>
-        
-                    
-        
-                    <button class="form-submit">Submit</button>
-                    <div class="dieuhuong"> 
-                        <a href="./homePage.html"><i class="fas fa-arrow-left"></i> Home</a>
-                        <a href="./formDN.html">Sign in <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </form>
-            </div> -->
-        <script src="./js/validator.js"></script>
-        <script src="./js/form.js"></script>
-      </div>
-    </div>
-    <script src="./js/validator.js"></script>
-
     
 
-
     <script src="./js/homePage.js"></script>
-  </body>
+    
+</body>
 </html>
