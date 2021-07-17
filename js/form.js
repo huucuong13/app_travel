@@ -85,3 +85,21 @@ validator({
       //       }
       //     }
       // });
+
+
+
+
+
+      
+    // function getInfo(){
+    //   var email = document.getElementById("username").value;
+    //   var password = document.getElementById("password").value;
+    //   for (i = 0; i < dataUse.length; i++){
+    //     if (password == dataUse[i].password && email == dataUse[i].email) {
+    //           console.log(email + "is logged in !!!")
+    //   }
+    //   else {
+    //     console.log("Incorrect")
+    //   }
+    //   }
+    // }

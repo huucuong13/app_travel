@@ -21,20 +21,11 @@
   <body>
     <div class="main">
       <div class="header">
-        <h2>Create Account</h2>
+        <h2>Sign In</h2>
       </div>
 
       <form action="" method="POST" class="form" id="form-1">
-        <div class="form-group">
-          <label for="fullname" class="form-laber">Username</label>
-          <input
-            id="fullname"
-            name="fullname"
-            type="text"
-            placeholder="VD: Hữu Cường"
-          />
-          <span class="form-message"></span>
-        </div>
+        
 
         <div class="form-group">
           <label for="email" class="form-laber">Email</label>
@@ -58,24 +49,13 @@
           <span class="form-message"></span>
         </div>
 
-        <div class="form-group">
-          <label for="password_confirmation" class="form-laber"
-            >Password check</label
-          >
-          <input
-            id="password_confirmation"
-            name="password_confirmation"
-            type="password"
-            placeholder="Nhập lại mật khẩu"
-          />
-          <span class="form-message"></span>
-        </div>
+        
 
-        <button class="form-submit">Submit</button>
+        <button class="form-submit" onclick="getInfo()">Submit</button>
 
         <div class="dieuhuong">
           <a href="./homePage.html"><i class="fas fa-arrow-left"></i> Home</a>
-          <a href="./signIn.html">Sign in <i class="fas fa-arrow-right"></i></a>
+          <a href="./form.html">Sign up <i class="fas fa-arrow-right"></i></a>
       </div>
       
       </form>
