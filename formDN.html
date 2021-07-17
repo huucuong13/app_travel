@@ -25,7 +25,16 @@
       </div>
 
       <form action="" method="POST" class="form" id="form-1">
-        
+        <!-- <div class="form-group">
+          <label for="fullname" class="form-laber">Username</label>
+          <input
+            id="fullname"
+            name="fullname"
+            type="text"
+            placeholder="VD: Hữu Cường"
+          />
+          <span class="form-message"></span>
+        </div> -->
 
         <div class="form-group">
           <label for="email" class="form-laber">Email</label>
@@ -49,19 +58,31 @@
           <span class="form-message"></span>
         </div>
 
-        
+        <!-- <div class="form-group">
+          <label for="password_confirmation" class="form-laber"
+            >Password check</label
+          >
+          <input
+            id="password_confirmation"
+            name="password_confirmation"
+            type="password"
+            placeholder="Nhập lại mật khẩu"
+          />
+          <span class="form-message"></span>
+        </div> -->
 
-        <button class="form-submit" onclick="getInfo()">Submit</button>
-
+        <button class="form-submit">Submit</button>
+        <!-- chuyển hướng sang trang mới -->
         <div class="dieuhuong">
           <a href="./homePage.html"><i class="fas fa-arrow-left"></i> Home</a>
-          <a href="./form.html">Sign up <i class="fas fa-arrow-right"></i></a>
-      </div>
-      
+          <a href="./form.html">Sign Up <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
       </form>
     </div>
+
+    <button id="dang_xuat">đăng xuất</button> test đăng xuất
     <script src="./js/validator.js"></script>
-    <script src="./js/form.js">
-    </script>
+    <script src="./js/formDN.js"></script>
   </body>
 </html>

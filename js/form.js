@@ -23,10 +23,11 @@ validator({
       // thêm acc vào hệ thống khi chưa có dữ liệu
       const dataUse2 = [
         {
-          id: "",
-          email: "",
-          password: "",
-          fullName: "",
+          id: "", // id acc
+          email: "",//email acc
+          password: "",//pass acc
+          fullName: "",//tên đầy đủ của chủ acc
+          Status :0 // trạng thái hoạt động 
         },
       ];
       dataUse2[0].id = 1;
@@ -42,23 +43,28 @@ validator({
       //thêm acc vào hệ thống khi có dữ liệu
       let emailValueDK = document.getElementById("email").value;
       let passwordValueDK = document.getElementById("password").value;
-      for (let i = 0; i < dataUse.length; i++) {//kiểm tra email có tồn tại hay chưa
-        if (//email đã tồn tại
+      for (let i = 0; i < dataUse.length; i++) {
+        //kiểm tra email có tồn tại hay chưa
+        if (
+          //email đã tồn tại
           emailValueDK == dataUse[i].email
         ) {
           alert("tai khoản đã tồn tại");
-          alert("hãy đăng ký email khác")
+          alert("hãy đăng ký email khác");
           break;
         }
-        if (i == dataUse.length - 1) {// email không tồn tại 
+        if (i == dataUse.length - 1) {
+          // email không tồn tại
           const objecNew = Object.assign({}, dataUse[0]); // thêm 1 objec mới
+          delete objecNew.fullName; // tránh lập lại  fullname
           dataUse.push(objecNew); //thêm giá trị mới của array là objec
           dataUse[dataUse.length - 1].id = dataUse.length; //thêm id
           dataUse[dataUse.length - 1].email = emailValueDK; // thêm email
           dataUse[dataUse.length - 1].password = passwordValueDK; //thêm pass
           dataUse[dataUse.length - 1].fullname =
-            document.getElementById("fullname").value;
+          document.getElementById("fullname").value;// thêm tên đầy đủ 
           console.log(dataUse);
+          dataUse[dataUse.length - 1].Status = 0;
           localStorage.setItem("dataUse", JSON.stringify(dataUse)); // dưa lên chỗ lưu trữ( JSON.stringify(dataUse) : chuyển array thành dạng json )
           alert("Bạn đã đăng ký thành công"); // thông báo đăng ký thành công
           location.assign("./homePage.html"); // trở về homepage khi đăng ký thành công
@@ -66,40 +72,4 @@ validator({
         }
       }
     }
-  },
-});
-
-//đăng nhập
-      //         document.getElementById("as").addEventListener("click", () => { ////chạy funtion khi nhấn nút đăng nhập
-      // //   event.preventDefault(); xoa reload lại trang
-      //         let emailValueDN = document.getElementById("email phần đăng nhập").value;
-      //         let passwordValueDN = document.getElementById("password phần đăng nhập").value;
-
-      //     for (let x = 0; x < dataUse.length; x++) {
-      //       //chạy vòng for để đăng nhập
-      //       if (passwordValueDN == dataUse[x].password && emailValueDN == dataUse[x].email) {
-      //         alert("đăng nhập thành công")
-      //         location.assign("./homePage.html"); //trở về homepage
-      //         console.log(emailValueDN);
-      //         console.log(passwordValueDN);
-      //       }
-      //     }
-      // });
-
-
-
-
-
-      
-    // function getInfo(){
-    //   var email = document.getElementById("username").value;
-    //   var password = document.getElementById("password").value;
-    //   for (i = 0; i < dataUse.length; i++){
-    //     if (password == dataUse[i].password && email == dataUse[i].email) {
-    //           console.log(email + "is logged in !!!")
-    //   }
-    //   else {
-    //     console.log("Incorrect")
-    //   }
-    //   }
-    // }
+  }});
