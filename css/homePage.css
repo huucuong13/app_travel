@@ -393,6 +393,7 @@ header .nav li a:hover{
     width: 100%;
     max-height: 52px;
     overflow: hidden;
+    font-weight: 500;
 }
 
 .review .review-content .content-box .box-text .box-like p{
@@ -412,6 +413,11 @@ header .nav li a:hover{
 .review .review-content .content-box .box-text .box-like i{
     padding-left: 5px;
 }
+
+.review .review-content .content-box .box-text .box-like .fas.fa-heart{
+    color: red;
+}
+
 
 .review .review-content .content-box:hover{
     transform: scale(1.025);
@@ -451,13 +457,13 @@ header .nav li a:hover{
 
 .video .video-content .video-row .col .feature-img{transition: 0.5s ease;}
 .video .video-content .video-row .col .feature-img:hover{
-    transform: scale(1.1);
+    transform: scale(1.02);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
 
 .video .video-content .video-row .col .small-img-row{transition: 0.5s ease;}
 .video .video-content .video-row .col .small-img-row:hover{
-    transform: scale(1.1);
+    transform: scale(1.02);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
 
@@ -742,135 +748,6 @@ video:focus{
 
 
 
-/* Start MODAL */
 
-.modal {
-    position: fixed;
-    top: 0;right: 0;bottom: 0;left: 0;
-    z-index: 2000;
-    display: none;
-}
-
-.modal .body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
-    background:url(../image/img-cuong/nenForm.png);
-    background-size: cover;
- 
-}
-.main {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    width: 400px;
-    max-width: 100%;
-
-    
-}
-
-.header {
-    background-color: #FFBD17;
-    border-bottom: 1px solid #f0f0f0;
-    padding: 20px 40px;
-    color: #fff;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.header h2{
-    margin: 0;
-}
-
-.form {
-    padding: 30px 40px;
-
-}
-
-.form-group {
-    display: flex;
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-    flex-direction: column;
-
-}
-
-.form-laber,
-.form-message {
-    text-align: left;
-}
-
-.form-group label {
-    display: inline-block;
-    margin-bottom: 5px;
-    font-weight: bold;
-
-}
-
-.form-group input {
-    border-radius: 4px;
-    border: 2px solid #999;
-    display: block;
-    font-size: 14px;
-    padding: 10px;
-    width: 100%;
-    font-weight: 700;
-}
-
-
-
-
-
-.form button {
-    background-color: #FFBD17;
-    border: 2px solid #FFBD17;
-    color: #fff;
-    border-radius: 4px;
-    display: block;
-    font-family: inherit;
-    font-size: 16px;
-    padding: 10px;
-    width: 100%;
-    cursor: pointer;
-    transition: 0.5s ease;
-
-
-}
-
-.form button:hover {
-    transform: scale(1.025);
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
-}
-
-
-.form-submit {
-    font-weight: 700;
-}
-
-.invalid span{
-    color: red;
-    font-weight: bold;
-}
-
-.invalid input{
-    border: 2px solid red;
-}
-
-.form .dieuhuong {
-    padding-top: 3%;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.form .dieuhuong a{
-    color: #111;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* End MODAL */
 
 

@@ -59,7 +59,7 @@ header .nav li{
 header .nav li a{
   text-decoration: none;
   color: #111;
-  font-weight: 900;
+  font-weight: 600;
   
 }
 
@@ -184,11 +184,12 @@ header .nav li a:hover{
   background: #fff;
   border-radius: 5px;
   padding: 2% 2%;
+  
 }
 
 .container-title h2{
   padding-bottom: 10px;
-
+  
 }
 
 .nut{
@@ -206,6 +207,9 @@ padding: 8% 2% 2% 2%;
   overflow: hidden;
 }
 
+.row .left-column .card p{
+  font-weight: 500;
+}
 
 .col-1{
   flex-basis: 40%;
@@ -215,8 +219,10 @@ padding: 8% 2% 2% 2%;
   padding: 1% 3%;
   margin-left: 10px;
 }
-.col-1 h2{
-  color: red;
+.col-1 h2,h1{
+  color: #4080FF;
+
+
 }
 
 .col-1 .col-1-comment i{
@@ -227,18 +233,39 @@ padding: 8% 2% 2% 2%;
   margin-right: 5px;
 }
 
+.col-1 .col-1-comment .nut--yeuthich {
+  color: red;
+}
+
+.col-1 .col-1-comment .nut--binhluan {
+  color: #888;
+}
 .col-1 .col-1-content_p p{
   margin: 0;
   
 }
 
-.col-1 .col-1-content p{
-  margin: 0;
+.col-1 .col-1-content {
+ 
+  min-height: 250px;
+  
+  
 }
 
+.col-1 .col-1-content p{
+  font-weight: 500;
+}
 .col-1 .danh_gia {
   margin-bottom: 10px;
+  display: flex;
 }
+
+.col-1 .danh_gia i{
+  color: #FEC42D;
+  margin-right: 5px;
+}
+
+
 
 .slider{
   width: 800px;
@@ -266,6 +293,19 @@ padding: 8% 2% 2% 2%;
   width: 800px;
   height: 500px;
 }
+
+.col-1 .col-1-content_p li{
+  list-style-type: none;
+  font-weight: 500;
+  display: flex;
+  
+}
+
+.col-1 .col-1-content_p li p{
+  /* font-size: 15px; */
+  margin-left: 10px;
+}
+/* end col-1 */
 
 
 /*css for manual slide navigation*/
@@ -421,11 +461,66 @@ width: 75%;
 }
 
 
+
 .right-column .card img{
 	margin-bottom: 10px;
 }
 
 
+
+.icon_share {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.icon_share .icon{
+  width: 70px;
+  height: 25px;
+  text-align: center;
+}
+
+.icon_share a {
+  text-decoration: none
+}
+
+
+.icon_share .icon.fb {
+  background: #3D5A98;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  
+}
+
+.icon_share .icon.tw {
+  background: #1DA1F2;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  
+
+}
+
+.icon_share .icon.heart {
+  background: red;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+}
 /*responsive */
 
 @media(max-width:800px){
@@ -443,11 +538,8 @@ width: 75%;
 
 .content {
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
   padding: 50px 100px 20px 100px;
 }
-
 
 /* fromBx */
 
@@ -632,13 +724,18 @@ width: 75%;
   padding: 1%;
   
 }
-.comment-user .comment-fake .person-1 img{
+.comment-user .comment-fake .person-1 .img-person{
   display: inline-block;
-  width: 90px;
-  height: 80px;
-  border-radius: 50%;
   margin: 10px 15px;
 }
+.comment-user .comment-fake .person-1 .img-person img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
 .comment-user .comment-fake .post--comment input{
   display: block;
   overflow: hidden;
