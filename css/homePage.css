@@ -746,6 +746,12 @@ video:focus{
 }
 
 
+/* con chuột hình tay chỉ */
+.chuot {
+    cursor: pointer;
+}
+
+
 
 
 
