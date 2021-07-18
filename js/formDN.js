@@ -51,10 +51,6 @@ validator({
     }
   },
 });
-// test đăng xuất
-document.getElementById("dang_xuat").addEventListener("click", () => {
-  for (let x = 0; x < dataUse.length; x++) {
-  dataUse[x].Status = 0;
-  localStorage.setItem("dataUse", JSON.stringify(dataUse));
-  console.log("oki");}
-});
+
+
+

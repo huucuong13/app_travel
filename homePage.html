@@ -35,17 +35,18 @@
         </button>
       </div>
       <ul class="nav">
-        <li><a href="#banner">Home</a></li>
+        <li><a href="#banner" >Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#review">Review</a></li>
         <li><a href="#video">Video</a></li>
         <li><a href="#founders">Founders</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li class="user">
-          <a href="#modal" onclick="startUser()"
-            ><i class="far fa-user-circle"></i> Log in</a
+        <li class="user" >
+          <a onclick="startUser()" id="login" class="chuot">
+            <i class="far fa-user-circle"></i>
+            Log in</a
           >
-          <ul class="user-option">
+          <ul class="user-option" id="login1">
             <li class="user-option-item">
               <a href="./formDN.html">Sign In</a>
             </li>
@@ -271,6 +272,7 @@
       <!-- <button class="control">next</button> -->
     </section>
 
+
     <section class="video" id="video">
       <div class="video-content">
         <h1> MY VIDEO REVIEW DA LAP</h1>
@@ -442,7 +444,6 @@
 
     <!-- End HOME PAGE  -->
 
-
     <div class="modal" id="modal">
       <div class="body">
         <a href="./homePage.html">home</a>
@@ -491,10 +492,8 @@
       </div>
     </div>
     <script src="./js/validator.js"></script>
-
-    
-
-
     <script src="./js/homePage.js"></script>
+    <script src="./js/formDX.js">  
+    </script>
   </body>
 </html>

@@ -231,6 +231,7 @@ header .nav li a:hover{
     background: url(../image/img-cuong/about2.png);
     width: 140%;
     height: 75vh;
+    
 }
 
 .about .row .about-song {
@@ -277,7 +278,7 @@ header .nav li a:hover{
 
 .about .row .col .col2 img{
     width: 100%;
-    object-fit: cover;
+    
 }
 
 /* REVIEW */
@@ -745,6 +746,12 @@ video:focus{
 .contactInfoBx .box .text h3{
     /* font-weight: 500; */
     color: #111;
+}
+
+
+/* con chuột hình tay chỉ */
+.chuot {
+    cursor: pointer;
 }
 
 
