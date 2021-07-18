@@ -229,8 +229,9 @@ header .nav li a:hover{
 
 .about .row {
     background: url(../image/img-cuong/about2.png);
-    width: 100%;
-    height: 100vh;
+    width: 140%;
+    height: 75vh;
+    
 }
 
 .about .row .about-song {
@@ -277,6 +278,7 @@ header .nav li a:hover{
 
 .about .row .col .col2 img{
     width: 100%;
+    
 }
 
 /* REVIEW */
