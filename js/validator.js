@@ -141,7 +141,7 @@ validator.isRequired = function (selector,message ) {
 
         selector: selector,
         test: function (value) {
-            return value ? undefined :message || 'Vui lòng nhập trường này'
+            return value ? undefined :message || 'Vui lòng nhập đầy đủ thông tin'
         },
     }
 }

@@ -39,7 +39,7 @@ validator({
           location.assign("./homePage.html"); //trở về homepage
           break;
         }
-        if (dataUse[x].Status == 1) {
+        if (dataUse[x].Status == 1) {//chỉ cho 1 tài khoản 1 lúc đăng nhập
           alert("đã có tài khoản hiện đang đăng nhập");
           break;
         }
