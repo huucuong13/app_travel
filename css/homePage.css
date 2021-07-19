@@ -385,6 +385,7 @@ header .nav li a:hover{
 .review .review-content .content-box .box-text {
     padding: 10px 10px 0 10px;
     background: #fff;
+    max-height: 122px;
 }
 
 .review .review-content .content-box .box-text h3{
@@ -401,11 +402,14 @@ header .nav li a:hover{
 
 .review .review-content .content-box .box-text .box-like p{
     flex: 1;
+    white-space: nowrap;
     min-height: 10px;
     font-size: 15px;
     font-weight: bold;
     overflow: hidden;
     color: #555;
+    text-overflow: clip;
+
 }
 .review .review-content .content-box .box-text .box-like {
     margin-top: 10px;
@@ -755,7 +759,40 @@ video:focus{
 }
 
 
+@media screen and (max-width: 1200px){
+    .header {
+        height: 70px
+    }
 
+    ul {
+        font-size: 11px
+    }
+    li {
+        padding-left: 10px !important;
+    }
+    li:last {
+        width: 60px !important;
+    }
+    li a .far {
+        font-size: 15px;
+    }
+    li.user i {
+        font-size: 10px
+    }
+}
+
+@media screen and (max-width: 800px){
+    ul {
+        font-size: 9px
+    }
+
+    li {
+        padding-left: 10px !important;
+    }
+    li:last {
+        width: 60px !important;
+    }
+}
 
 
 
