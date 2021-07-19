@@ -152,7 +152,7 @@ per20.innerHTML = dataDetail.per20;
 function submitComment() {
     let divContent = document.getElementById('content-comment');
     let content = divContent.value;
-    
+   
     listComments = dataDetail.comments;
     let dataContent = {
         'content' : content,
@@ -160,12 +160,13 @@ function submitComment() {
         'name' : 'name',
     };
     listComments.push(dataContent);
+
     console.log(listComments);
     comment = document.createElement('div');
     htmlContent = '<div class="person-1">'+
     '<div class="img-person"><img  src="https://i.pinimg.com/originals/18/60/64/186064435781b1d78013dcb4ba9208a4.jpg"></div>'+
     '<div class="comment-fake-content">'+
-        '<h2 >Thái Tuấn Công - 26 tuổi</h2>'+
+        '<h2 >' + 'name' +'</h2>'+
         '<span >' + new Date() +'</span>'+
         '<p ><i class="fas fa-quote-left"></i> ' +content+'</p>'+
     +'</div></div> ';
@@ -174,6 +175,10 @@ function submitComment() {
     let divContentUser = document.getElementById("comment-fake");
     console.log(divContentUser);
     divContentUser.appendChild(comment);
+
+    // localStorage.setItem(travel, JSON.stringify(travel));
+    // const upTravel = localStorage.getItem("travel");
+    // JSON.parse(upTravel);
    
     
 }

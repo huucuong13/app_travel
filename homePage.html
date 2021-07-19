@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./image/img-cuong/review (1).png" type="image/x-icon">
     <title>Review Travel</title>
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -27,6 +27,7 @@
       <div class="header_search">
         <input
           type="text"
+          id="searchBar"
           class="header_search-input"
           placeholder="Search review"
         />
@@ -68,9 +69,9 @@
         ></video>
         <h2>REVIEW TRAVEL</h2>
         <p>Welcome to review travel where you can view travel reviews.</p>
-        <a href="#about" class="btn-Banner">About</a>
+        <a href="#review" class="btn-Banner">REVIEW <i class="fas fa-arrow-right"></i></a>
       </div>
-      <div class="wave"></div>
+      
     </section>
 
     <section class="about" id="about">
@@ -99,9 +100,11 @@
     <section class="review" id="review">
       <div class="review-title">
         <h2 class="title"><span>R</span>eview</h2>
-        <div class="search">
+        <div class="search" >
           <div class="input">
             <input
+              onkeyup="filter()"
+              id="searchbox"
               type="text"
               class="input-search"
               placeholder="Search review"
@@ -117,7 +120,7 @@
           <div class="box-img">
               <img src="https://owa.bestprice.vn/images/articles/uploads/du-lich-sapa-thang-nao-dep-nhat-5e835f67e2f14.jpg" alt="">
           </div>
-          <div class="box-text">
+          <div class="box-text" >
               <h3>Sa Pa</h3>
               <p>Chia sẻ lại bài Review phượt SAPA 3 ngày 2 đêm của bạn Ngọc Vũ</p>
               <div class="box-like">
@@ -271,7 +274,6 @@
       </div>
       <!-- <button class="control">next</button> -->
     </section>
-
 
     <section class="video" id="video">
       <div class="video-content">
@@ -444,13 +446,7 @@
 
     <!-- End HOME PAGE  -->
 
-    <div class="modal" id="modal">
-      <div class="body">
-        <a href="./homePage.html">home</a>
-        <script src="./js/validator.js"></script>
-        <script src="./js/form.js"></script>
-      </div>
-    </div>
+    
     <script src="./js/validator.js"></script>
     <script src="./js/homePage.js"></script>
     <script src="./js/formDX.js">  

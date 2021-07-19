@@ -643,3 +643,22 @@ const upTravel = localStorage.getItem("travel");
 const obj = JSON.parse(upTravel);
 
 
+/* searchBar */
+
+
+function filter() {
+    var filterValue, input, content, div, i;
+    input =document.getElementById('searchbox');
+    filterValue = input.value.toUpperCase();
+    content = document.getElementById('review-content');
+    div = content.getElementsByTagName('div');
+    for (i = 0; i < div.length; i++) {
+        var a = div[i].getElementsByTagName('h3')[0];
+        if (a.innerHTML.indexOf(filterValue))  {
+            div[i].style.display = "block";
+        } else {
+            div[i].style.display = "none";
+        }
+    }
+}
+
