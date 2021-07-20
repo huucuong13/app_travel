@@ -573,12 +573,13 @@ video:focus{
 }
 
 .founders .heading span{
-    color: #FFF;
+    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 30px;
     font-size: 30px;
+    
 }
 
 .founders .box-container {
