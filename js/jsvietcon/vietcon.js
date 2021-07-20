@@ -170,6 +170,7 @@ function submitComment() {
         'name' : 'name',
     };
     listComments.push(dataContent);
+
     console.log(listComments);
     comment = document.createElement('div');
     htmlContent = '<div class="person-1">'+
@@ -184,7 +185,7 @@ function submitComment() {
     let divContentUser = document.getElementById("comment-fake");
     console.log(divContentUser);
     divContentUser.appendChild(comment);
-    document.getElementById('content-comment').innerHTML = "";
+    
 }
 
 
