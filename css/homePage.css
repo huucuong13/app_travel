@@ -231,7 +231,7 @@ header .nav li a:hover{
     background: url(../image/img-cuong/about2.png);
     width: 100%;
     height: 100vh;
-    
+    background-size: 100%;
 }
 
 .about .row .about-song {
