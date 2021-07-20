@@ -32,6 +32,11 @@ function startLayout(id = 0) {
 }
 
 
+function thank() {
+    window.location.href ="./thanks.html";
+    
+}
+
 // API 
 
 const travel = [
@@ -45,8 +50,8 @@ const travel = [
         img4:"https://pystravel.vn/uploads/posts/albums/4799/b636e49b3fd1c99f8bf34200402f7227.jpg",
         location:"Khu vực Hồ Trị An",
         danhgia:"4/5 trong 160 đánh giá",
-        heart: " 500",
-        nutComment: " 150",
+        heart: " 32",
+        nutComment: " 5",
         text: {
             vung: "- Vùng: Tây Nam Bộ",
             tinh:"- Tỉnh: Đồng Nai",
@@ -69,13 +74,13 @@ const travel = [
         // commentHot
         user1a:"./image/anhvietcon/caothaison.jpg",
         user1b:"Cao Thái Sơn",
-        user1c:"&#100755 Công nhận là đi du lịch ở đây thích cực kì, nhưng rất tiếc mình chuẩn men, ko nói nhiều",
+        user1c:"&#10075 Công nhận là đi du lịch ở đây thích cực kì, nhưng rất tiếc mình chuẩn men, ko nói nhiều",
         user2a:"./image/anhvietcon/nogctrinh.jpg",
         user2b:"Ngọc Trinh",
-        user2c:"&#100755 Mấy hôm nữa mình có show chụp ảnh ở đây đi trên rôn roy màu hồng, các bạn thích thì đua xe!",
-        user3a:"https://lh3.googleusercontent.com/proxy/qQfttnXRrsq4CQ59o6KJrbn2992kNT01unCxeoJIMWJ77id2naxldfOMUFkX56TPPYMt3W5nJQ3fItr2fQDbE4SMzFErip73pcVn2X4cTjqoIUtOl_BQKMeDDB-UYw4kEmD61iq7Zuk",
+        user2c:"&#10075 Mấy hôm nữa mình có show chụp ảnh ở đây đi trên rôn roy màu hồng, các bạn thích thì đua xe!",
+        user3a:"https://nld.mediacdn.vn/291774122806476800/2021/7/2/unnamed-16216504337271534727568-1625186563783350914602.jpeg",
         user3b:"Khắc Việt",
-        user3c:"&#100755 Những chỗ này khung cảnh rất đẹp, mình đã sáng tác ra bài Như Vậy Nhé khi đến Sapa",
+        user3c:"&#10075 Những chỗ này khung cảnh rất đẹp, mình đã sáng tác ra bài Như Vậy Nhé khi đến Sapa",
         // commentUser
         per1:"./image/anhvietcon/lemiho.jpg",
         per2:"Thái Tuấn Công",
@@ -110,8 +115,8 @@ const travel = [
         img4:"https://luhanhvietnam.com.vn/du-lich/vnt_upload/news/06_2021/chua-tu-dam.jpg",
         location:"Khu vực Quảng Trị – Huế",
         danhgia:"4.2/5 trong 110 đánh giá",
-        heart: " 200",
-        nutComment: " 50",
+        heart: " 20",
+        nutComment: " 5",
         text: {
             vung: "- Vùng: Miền Trung",
             tinh:"- Tỉnh: Quảng Trị",
@@ -174,8 +179,8 @@ const travel = [
         img4:"https://luhanhvietnam.com.vn/du-lich/vnt_upload/news/12_2020/bai-nuoc-ngot-ninh-thuan.jpg",
         location:"Khu vực Ninh Thuận",
         danhgia:"4.21/5 trong 90 đánh giá",
-        heart: " 100",
-        nutComment: " 20",
+        heart: " 10",
+        nutComment: " 7",
         text: {
             vung: "- Vùng:Nam Trung Bộ",
             tinh:"- Tỉnh:Ninh Thuận",
@@ -196,7 +201,7 @@ const travel = [
         img6: "https://vietbluetour.com/wp-content/uploads/2019/08/62215211_2739143409491145_6516567519589826560_o-1200x900.jpg",
         img7: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaH8JZztLW5ErwI1tVi27kjub7fV7xrYz1P_iufgE-UQoPAhHSjSj3BOVGW3INIEw7Tx0&usqp=CAU",
         // commentHot
-        user1a:"https://lh3.googleusercontent.com/proxy/L-U1R3yCQfq4vT9AGwTQZeZixH1iecxEM0lf_wkfxm9zpA8BxSSNig49dKYp5JJkB2rdw8tAv9QzibXG_eMR9dIv7EwSbvJwqvd_K6vcCh-I0YrspMyBbZ1Mwmn2b3kwsqCq3POk_Q",
+        user1a:"https://yt3.ggpht.com/ytc/AKedOLRqa2wyiphRhq5sHUnovvX2i3KSbQYGfeMd0jMcWQ=s900-c-k-c0x00ffffff-no-rj",
         user1b:"Đức Phúc",
         user1c:"&#10075 Tôi và gia đình rất thích đi ở đây vì nó quá đẹp và gợi cho tôi nhiều cảm xúc",
         user2a:"https://images.shazam.com/coverart/t52184953_s400.jpg",
@@ -238,8 +243,8 @@ const travel = [
         img3:"https://leisure-travel.vn/wp-content/uploads/2020/06/photo-7-1593266534158693952850.jpg",
         img4:"http://vinhlongtoday.com/wp-content/uploads/2017/11/du_lich-1.jpg",
         danhgia:"4.9/5 trong 200 đánh giá",
-        heart: " 530",
-        nutComment: " 231",
+        heart: " 15",
+        nutComment: " 5",
         text: {
             vung: "- Vùng: Tây Bắc Bộ",
             tinh:"- Tỉnh: Lào Cai",
@@ -302,8 +307,8 @@ const travel = [
         img4:"https://luhanhvietnam.com.vn/du-lich/vnt_upload/news/03_2020/kinh-nghiem-du-lich-dak-lak_17.jpg",
         location:"Khu vực Dak Lak",
         danhgia:"4.2/5 trong 60 đánh giá",
-        heart: " 50",
-        nutComment: " 10",
+        heart: " 20",
+        nutComment: " 3",
         text: {
             vung: "- Vùng: Tây nguyên",
             tinh:"- Tỉnh: Dak Lak",
@@ -366,8 +371,8 @@ const travel = [
         img4:"https://divui.com/content/images/thumbs/0021407_skylight-nha-trang_550.jpeg",
         location:"Khu vực Nha Trang",
         danhgia:"4.43/5 trong 200 đánh giá",
-        heart: " 510",
-        nutComment: " 231",
+        heart: " 51",
+        nutComment: " 32",
         text: {
             vung: "- Vùng: Miền Nam",
             tinh:"- Tỉnh: Khánh Hòa",
@@ -430,8 +435,8 @@ const travel = [
         img4:"https://3.bp.blogspot.com/-ToyIeKcMpi0/Wup-kFvmSlI/AAAAAAAAOLE/J-d3iYGCQ_UkIq7YqCwpsBI0mSHE-_pGgCLcBGAs/w1200-h630-p-k-no-nu/13745243_509091405965330_230136932_n.jpg",
         location:"Khu vực Bảo lộc",
         danhgia:"4.7/5 trong 160 đánh giá",
-        heart: " 420",
-        nutComment: " 120",
+        heart: " 40",
+        nutComment: " 12",
         text: {
             vung: "- Vùng: Tây Nguyên",
             tinh:"- Tỉnh: Lâm Đồng",
@@ -455,7 +460,7 @@ const travel = [
         user1a:"https://pbs.twimg.com/profile_images/668974474021068801/cKVncoHu_400x400.jpg",
         user1b:"Isaac",
         user1c:"&#10075 Không cần gì nhiều, đến Bảo Lộc bạn sẽ được tận hưởng sự thoải mái chưa từng có",
-        user2a:"https://lh3.googleusercontent.com/proxy/RVmlmR3RfIYrtXEBgPNvgu_N-6Cna8L66HFNT3UQOZ8qMOCF1APRZ7LUFMLGwTHsC8k3ZCdJnHD_9BqMpBYhJ2NP-F-sZkCgIobPW_caZd3pOTM_kC3kLgOnlQlA88oggDoBUMA50g",
+        user2a:"https://yt3.ggpht.com/ytc/AKedOLRqa2wyiphRhq5sHUnovvX2i3KSbQYGfeMd0jMcWQ=s900-c-k-c0x00ffffff-no-rj",
         user2b:"Đức Phúc",
         user2c:"&#10075 Bạn hãy đi hít thở không khí trong lành nơi đây, tôi đã cảm thấy cơ thể tràn đầy năng lượng",
         user3a:"http://bongluavang.vn/wp-content/uploads/2018/10/gay-tranh-cai-khi-dung-cung-san-khau-voi-sao-lon-chau-khai-phong-0ef200-400x400.jpg",
@@ -494,8 +499,8 @@ const travel = [
         img4:"https://media.truyenhinhdulich.vn/upload/news/315_moc_hoa_mua_nuoc_noi.jpg",
         location:"Khu vực Miền Tây với mảnh đất Cà Mau",
         danhgia:"4.5/5 trong 104 đánh giá",
-        heart: " 200",
-        nutComment: " 50",
+        heart: " 29",
+        nutComment: " 13",
         text: {
             vung: "- Vùng: Tây Nam Bộ",
             tinh:"- Tỉnh: Cà Mau",
@@ -558,8 +563,8 @@ const travel = [
         img4:"https://www.airtrippy.vn/images/2020/12/23/201223-032136-bai-chet-01-airtrippy-nam-du.jpg",
         location:"Khu vực đảo Nam Du",
         danhgia:"4.5/5 trong 173 đánh giá",
-        heart: " 329",
-        nutComment: " 42",
+        heart: " 32",
+        nutComment: " 26",
         text: {
             vung: "- Vùng: Nam Trung Bộ",
             tinh:"- Tỉnh: Rạch Giá",
