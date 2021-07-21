@@ -142,49 +142,67 @@ per19.innerHTML = dataDetail.per19;
 per20.innerHTML = dataDetail.per20;
 
 
+let dataUser = localStorage.getItem('dataUse');
+dataUser = JSON.parse(dataUser);
 
-
-
-
-
-// push comment to post
-
-function submitComment() {
-    const dataUseCommentVC  = JSON.parse(localStorage.getItem("dataUse"));
-    let useCommentVC_fullname = ""
+let dataLogin = dataUser.filter( function(e, index) {
+        return e.Status == 1;
+    });
     
-    for(let i =0 ; i < dataUseCommentVC.length ; i++){//lấy full name của acc đang đăng nhập
-        
-        if( dataUseCommentVC[i].Status == 1){
-            useCommentVC_fullname = dataUseCommentVC[i].fullname;
-            console.log( useCommentVC_fullname);
-        }
-        
-    }
+    
+    
+let divContentUser = document.getElementById("comment-fake");
+
+if (dataDetail.comments.length > 0) {
+    let list = '<div>';
+    dataDetail.comments.forEach(element => {
+        list += `<div class="person-1">
+    <div class="img-person"><img  src="https://i.pinimg.com/originals/18/60/64/186064435781b1d78013dcb4ba9208a4.jpg"></div>
+    <div class="comment-fake-content">
+        <h2 >${ element.name }</h2>
+        <span >${ element.date }</span>
+        <p ><i class="fas fa-quote-left"></i> ${element.content}</p></div></div> `;
+    });
+    list +='</div>';
+
+    divContentUser.innerHTML = list;
+}
+
+
+// push comments 
+function submitComment() {
     let divContent = document.getElementById('content-comment');
     let content = divContent.value;
+    let date = new Date();
+    let dateTime = date.getFullYear() +'/'+ date.getMonth() + '/' + date.getDay() +' ' + date.getHours() + ':' + date.getMinutes();
+    let nameComment = '';
+    if (dataLogin.length > 0) {
+        nameComment = dataLogin[0].fullname;
+    }   
+
     listComments = dataDetail.comments;
     let dataContent = {
         'content' : content,
-        'date' : new Date(),
-        'name' : 'name',
+        'date' : dateTime,
+        'name' : nameComment,
     };
-    listComments.push(dataContent);
+    listTravel[detailId].comments.push(dataContent);
+    divContent.value = '';
+ 
 
-    console.log(listComments);
     comment = document.createElement('div');
     htmlContent = '<div class="person-1">'+
     '<div class="img-person"><img  src="https://i.pinimg.com/originals/18/60/64/186064435781b1d78013dcb4ba9208a4.jpg"></div>'+
     '<div class="comment-fake-content">'+
-        '<h2 >'+ useCommentVC_fullname + '</h2>'+
-        '<span >' + new Date() +'</span>'+
-        '<p ><i class="fas fa-quote-left"></i> ' +content+'</p>'+
-    +'</div></div> ';
+        '<h2 >' + nameComment +'</h2>'+
+        '<span >' + dateTime +'</span>'+
+        '<p ><i class="fas fa-quote-left"></i> ' +content+'</p></div></div> ';
 
     comment.innerHTML = htmlContent;
-    let divContentUser = document.getElementById("comment-fake");
-    console.log(divContentUser);
     divContentUser.appendChild(comment);
+    console.log(detailId);
+     localStorage.setItem("travel", JSON.stringify(listTravel));
+   
     
 }
 
