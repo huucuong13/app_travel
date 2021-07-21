@@ -13,9 +13,9 @@ for (i = 0; i < dataUseDX.length; i++) {
     };
     L1.innerText =
       dataUseDX[i].email ; // hiện email đang đăng nhập
-
+    
     // L1.remove() // xóa thẻ con của thẻ log in
-     let br = document
+    
     L.innerHTML = "Log out"; // xóa chữ log in thay bằng chữ đăng xuất
     break;
   }
