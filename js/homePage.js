@@ -31,7 +31,6 @@ function startLayout(id = 0) {
     window.location.href ="./vietcon.html";
 }
 
-
 function thank() {
     window.location.href ="./thanks.html";
     
@@ -60,8 +59,8 @@ for (let i = 0; i < obj.length; i++) {
     </div>
 </div>`
 };
-let reviewConntent = document.getElementById("review-content");
-reviewConntent.innerHTML = templateHTML1;
+let reviewContent = document.getElementById("review-content");
+reviewContent.innerHTML = templateHTML1;
 
 
 
@@ -100,7 +99,7 @@ let keyword = document.getElementById('searchbox');
 
         
     }
-    reviewConntent.innerHTML = templateHTMLSearch;
+    reviewContent.innerHTML = templateHTMLSearch;
 
 }
 
