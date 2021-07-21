@@ -75,10 +75,6 @@ per19 =  document.getElementById('per19');
 per20 =  document.getElementById('per20');
 
 
-
-
-
-
 title.innerHTML = dataDetail.title;
 reviewer.innerHTML = dataDetail.reviewer;
 vung.innerHTML = dataDetail.text.vung;

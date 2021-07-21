@@ -232,7 +232,7 @@ header .nav li a:hover{
     background-size: 100%;
     width: 100%;
     height: 100vh;
-    
+    background-size: 100%;
 }
 
 .about .row .about-song {
@@ -576,12 +576,13 @@ video:focus{
 }
 
 .founders .heading span{
-    color: #FFF;
+    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 30px;
     font-size: 30px;
+    
 }
 
 .founders .box-container {
