@@ -26,14 +26,14 @@ validator({
           id: "", // id acc
           email: "",//email acc
           password: "",//pass acc
-          fullName: "",//tên đầy đủ của chủ acc
-          Status :0 // trạng thái hoạt động 
+          Status :0 ,// trạng thái hoạt động 
+          fullname: ""//tên đầy đủ của chủ acc
         },
       ];
       dataUse2[0].id = 1;
       dataUse2[0].email = document.getElementById("email").value;
       dataUse2[0].password = document.getElementById("password").value;
-      dataUse2[0].fullName = document.getElementById("fullname").value;
+      dataUse2[0].fullname = document.getElementById("fullname").value;
       localStorage.setItem("dataUse", JSON.stringify(dataUse2));
       console.log(JSON.parse(localStorage.getItem("dataUse")));
       alert("Bạn đã đăng ký thành công"); // thông báo đăng ký thành công
